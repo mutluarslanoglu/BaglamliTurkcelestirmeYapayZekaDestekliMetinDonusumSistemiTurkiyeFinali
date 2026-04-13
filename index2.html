@@ -1,0 +1,1836 @@
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📝 Bağlamlı Türkçeleştirme: Yapay Zekâ Destekli Metin Dönüşüm Sistemi</title>
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --phone: #f8fafc;
+      --card: #ffffff;
+      --line: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --primary-soft: #eaf2ff;
+      --success: #166534;
+      --success-bg: #dcfce7;
+      --danger: #991b1b;
+      --danger-bg: #fee2e2;
+      --warning: #92400e;
+      --warning-bg: #fef3c7;
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --shadow-phone: 0 24px 60px rgba(15, 23, 42, 0.16);
+      --shadow-card: 0 10px 28px rgba(15, 23, 42, 0.06);
+      --shadow-web: 0 24px 70px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(37,99,235,0.10), transparent 30%),
+        linear-gradient(180deg, #f3f6fb 0%, #edf2f7 100%);
+      color: var(--text);
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 14px;
+    }
+
+    .page-header {
+      width: min(1320px, 100%);
+      margin: 0 auto 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .page-title h1 {
+      margin: 0;
+      font-size: clamp(22px, 3vw, 34px);
+      letter-spacing: -0.04em;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .page-title p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .view-switch {
+      display: inline-flex;
+      gap: 6px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(255,255,255,0.9);
+      border-radius: 18px;
+      padding: 6px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .switch-btn {
+      min-height: 38px;
+      padding: 0 14px;
+      border: 0;
+      border-radius: 14px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.18s ease;
+    }
+
+    .switch-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 10px 20px rgba(37,99,235,0.20);
+    }
+
+    .preview-stage {
+      width: min(1320px, 100%);
+      margin: 0 auto;
+      transition: 0.25s ease;
+    }
+
+    .preview-stage.mobile .app-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .preview-stage.mobile .phone {
+      width: 100%;
+      max-width: 1180px;
+      height: calc(100vh - 110px);
+      min-height: 620px;
+      background: var(--phone);
+      border: 1px solid rgba(255,255,255,0.9);
+      border-radius: 28px;
+      box-shadow: var(--shadow-phone);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .preview-stage.mobile .notch {
+      display: none;
+    }
+
+    .preview-stage.mobile .bottom-nav {
+      display: none;
+    }
+
+    .preview-stage.mobile .screen {
+      height: 100%;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 10px;
+      overflow: hidden;
+    }
+
+    .preview-stage.mobile .sidebar-card,
+    .preview-stage.mobile .content-col {
+      height: 100%;
+      overflow: auto;
+      scrollbar-width: thin;
+    }
+
+    .preview-stage.mobile .sidebar-card {
+      padding: 10px;
+      margin-bottom: 0;
+    }
+
+    .preview-stage.mobile .content-col {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      min-width: 0;
+    }
+
+    .preview-stage.mobile .input-output-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .preview-stage.mobile .topbar {
+      gap: 6px;
+      margin-top: 0;
+      margin-bottom: 6px;
+      align-items: flex-start;
+    }
+
+    .preview-stage.mobile .app-id {
+      gap: 6px;
+      align-items: flex-start;
+    }
+
+    .preview-stage.mobile .logo {
+      width: 30px;
+      height: 30px;
+      border-radius: 12px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .preview-stage.mobile .app-id h1 {
+      font-size: 14px;
+      line-height: 1.12;
+    }
+
+    .preview-stage.mobile .app-id p {
+      font-size: 9px;
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+
+    .preview-stage.mobile .avatar-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    .preview-stage.mobile .quick-stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .preview-stage.mobile .stat-card {
+      padding: 8px;
+      border-radius: 14px;
+    }
+
+    .preview-stage.mobile .stat-card span {
+      font-size: 9px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+      min-height: 2.2em;
+    }
+
+    .preview-stage.mobile .stat-card strong {
+      font-size: 14px;
+      line-height: 1.02;
+    }
+
+    .preview-stage.mobile .section {
+      margin-bottom: 0;
+    }
+
+    .preview-stage.mobile .hero-card {
+      padding: 12px;
+      margin-bottom: 0;
+    }
+
+    .preview-stage.mobile .hero-card h2 {
+      font-size: 17px;
+      line-height: 1.08;
+    }
+
+    .preview-stage.mobile .hero-card p {
+      font-size: 11px;
+      line-height: 1.4;
+      margin-top: 6px;
+    }
+
+    .preview-stage.mobile .card {
+      padding: 10px;
+      border-radius: 16px;
+    }
+
+    .preview-stage.mobile .section-head {
+      margin-bottom: 6px;
+    }
+
+    .preview-stage.mobile .section-head h3 {
+      font-size: 13px;
+    }
+
+    .preview-stage.mobile .section-head p,
+    .preview-stage.mobile .helper,
+    .preview-stage.mobile .report {
+      font-size: 10px;
+      line-height: 1.35;
+    }
+
+    .preview-stage.mobile .field {
+      margin-bottom: 8px;
+    }
+
+    .preview-stage.mobile input,
+    .preview-stage.mobile select,
+    .preview-stage.mobile button {
+      min-height: 38px;
+    }
+
+    .preview-stage.mobile textarea {
+      min-height: 120px;
+      padding: 10px;
+      resize: none;
+    }
+
+    .preview-stage.mobile .items-wrap {
+      max-height: 180px;
+    }
+
+    .preview-stage.mobile .check {
+      min-height: 38px;
+      padding: 10px 12px;
+      font-size: 12px;
+    }
+
+    .preview-stage.mobile .action-grid,
+    .preview-stage.mobile .toolbar,
+    .preview-stage.mobile .hero-actions {
+      gap: 6px;
+    }
+
+    .preview-stage.mobile .single-action,
+    .preview-stage.mobile .status,
+    .preview-stage.mobile .report {
+      margin-top: 6px;
+    }
+
+    .preview-stage.mobile .nav-item {
+      min-height: 46px;
+      border-radius: 14px;
+      font-size: 9px;
+      padding: 3px;
+    }
+
+    .preview-stage.desktop .app-wrap {
+      display: block;
+    }
+
+    .preview-stage.desktop .phone {
+      width: 100%;
+      max-width: 1320px;
+      min-height: auto;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      overflow: visible;
+      position: relative;
+    }
+
+    .preview-stage.desktop .notch {
+      display: none;
+    }
+
+    .preview-stage.desktop .screen {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .preview-stage.desktop .sidebar-card {
+      position: sticky;
+      top: 18px;
+      max-width: 100%;
+    }
+
+    .preview-stage.desktop .content-col {
+      display: grid;
+      gap: 14px;
+    }
+
+    .preview-stage.desktop .hero-actions,
+    .preview-stage.desktop .action-grid,
+    .preview-stage.desktop .toolbar {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .preview-stage.desktop .quick-stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .preview-stage.desktop .input-output-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 14px;
+    }
+
+    .preview-stage.desktop .section {
+      margin-bottom: 0;
+    }
+
+    .preview-stage.desktop .bottom-nav {
+      display: none;
+    }
+
+    .preview-stage.desktop .hero-card,
+    .preview-stage.desktop .card,
+    .preview-stage.desktop .sidebar-card {
+      box-shadow: var(--shadow-web);
+    }
+
+    .preview-stage.desktop .screen {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .preview-stage.desktop .sidebar-card {
+      position: static;
+      display: grid;
+      grid-template-columns: minmax(260px, 320px) minmax(300px, 420px) minmax(420px, 1fr);
+      gap: 16px;
+      align-items: start;
+      padding: 18px;
+    }
+
+    .preview-stage.desktop .topbar {
+      grid-column: 1;
+      margin: 0;
+      min-width: 0;
+      align-self: start;
+    }
+
+    .preview-stage.desktop .quick-stats {
+      grid-column: 2;
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 0;
+      min-width: 0;
+      align-self: start;
+    }
+
+    .preview-stage.desktop .sidebar-card > .section {
+      grid-column: 3;
+      margin: 0;
+      min-width: 0;
+    }
+
+    .preview-stage.desktop .sidebar-card .card {
+      box-shadow: none;
+    }
+
+    .preview-stage.desktop .content-col {
+      display: grid;
+      gap: 16px;
+    }
+
+    @media (max-width: 1200px) {
+      .preview-stage.desktop .sidebar-card {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .preview-stage.desktop .topbar {
+        grid-column: 1 / -1;
+      }
+
+      .preview-stage.desktop .quick-stats {
+        grid-column: 1;
+      }
+
+      .preview-stage.desktop .sidebar-card > .section {
+        grid-column: 2;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .preview-stage.desktop .sidebar-card {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-stage.desktop .topbar,
+      .preview-stage.desktop .quick-stats,
+      .preview-stage.desktop .sidebar-card > .section {
+        grid-column: 1;
+      }
+    }
+
+    .preview-stage.desktop .hero-card h2 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .sidebar-card,
+    .hero-card,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .sidebar-card {
+      padding: 14px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 6px;
+      margin-bottom: 14px;
+    }
+
+    .app-id {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+      box-shadow: 0 10px 22px rgba(37,99,235,0.22);
+      flex-shrink: 0;
+    }
+
+    .app-id h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .app-id p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .avatar-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: white;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      padding: 14px;
+      box-shadow: 0 16px 32px rgba(37,99,235,0.20);
+      margin-bottom: 14px;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.16);
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero-card h2 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-card p {
+      margin: 10px 0 0;
+      color: rgba(255,255,255,0.88);
+      font-size: 12px;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: var(--shadow-card);
+      min-width: 0;
+    }
+
+    .stat-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: clamp(20px, 2vw, 26px);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      padding: 0 2px;
+    }
+
+    .section-head h3 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .section-head p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .card {
+      padding: 14px;
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .field:last-child { margin-bottom: 0; }
+
+    .field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 16px;
+      outline: none;
+      font: inherit;
+      transition: 0.18s ease;
+    }
+
+    input, select {
+      min-height: 48px;
+      padding: 0 14px;
+    }
+
+    textarea {
+      padding: 15px;
+      min-height: 200px;
+      resize: vertical;
+      line-height: 1.7;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #93c5fd;
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.10);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      min-height: 48px;
+      border-radius: 16px;
+      padding: 12px 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .check input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    button {
+      border: 0;
+      border-radius: 18px;
+      min-height: 48px;
+      padding: 0 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.18s ease;
+    }
+
+    button:active { transform: scale(0.98); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      box-shadow: 0 10px 20px rgba(37,99,235,0.18);
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: var(--text);
+    }
+
+    .btn-ghost {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .toolbar, .action-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .single-action {
+      margin-top: 12px;
+    }
+
+    .helper {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .status {
+      display: none;
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .status.ok {
+      display: block;
+      background: var(--success-bg);
+      color: var(--success);
+    }
+
+    .status.err {
+      display: block;
+      background: var(--danger-bg);
+      color: var(--danger);
+    }
+
+    .status.warn {
+      display: block;
+      background: var(--warning-bg);
+      color: var(--warning);
+    }
+
+    .report {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .items-wrap {
+      display: grid;
+      gap: 10px;
+      max-height: 520px;
+      overflow: auto;
+      padding-right: 2px;
+    }
+
+    .empty {
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: #f8fafc;
+      border: 1px dashed var(--line);
+      border-radius: 20px;
+      color: var(--muted);
+      padding: 20px;
+      line-height: 1.7;
+      font-size: 12px;
+    }
+
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px;
+      background: #fff;
+    }
+
+    .item-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .term-box strong {
+      display: block;
+      font-size: 17px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      margin-bottom: 4px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .term-box span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .context {
+      background: #f8fbff;
+      border: 1px solid #dbeafe;
+      border-radius: 16px;
+      padding: 11px 12px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+      margin: 12px 0;
+    }
+
+    .progress-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .progress {
+      width: 100%;
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+      border-radius: inherit;
+    }
+
+    .summary-card {
+  padding: 20px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #d9e6f5;
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 rgba(255,255,255,0.85);
+}
+
+    .summary-top {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+    .mini-stat {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;    
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+  border: 1px solid #d7e4f3;
+  border-radius: 20px;
+  padding: 16px 14px;
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+.mini-stat:hover {
+  transform: translateY(-3px);
+  border-color: #bcd3ee;
+  box-shadow:
+    0 16px 30px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+.mini-stat::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #93c5fd 0%, #3b82f6 70%, transparent 72%);
+  opacity: 0.9;
+}
+
+.mini-stat::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+}
+
+    .mini-stat span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+  .mini-stat strong {
+  display: block;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #0f172a;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+   .summary-bars {
+  border: 1px solid #d9e6f5;
+  border-radius: 22px;
+  padding: 16px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5fc 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.85);
+}
+
+    .bar-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 42px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+    .bar-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .bar-label {
+  font-size: 14px;
+  font-weight: 800;
+  color: #334155;
+  letter-spacing: -0.01em;
+}
+
+    .bar-track {
+  height: 16px;
+  background: linear-gradient(180deg, #e5e7eb 0%, #dfe5ec 100%);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+.bar-row strong {
+  font-size: 14px;
+  font-weight: 800;
+  color: #0f172a;
+  text-align: right;
+}
+    .bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  transition: width 0.45s ease;
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+.bar-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35%;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.45) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+    .bar-fill.success {
+  background: linear-gradient(90deg, #4ade80, #16a34a);
+  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.22);
+}
+
+.bar-fill.warning {
+  background: linear-gradient(90deg, #fde047, #f59e0b);
+  box-shadow: 0 4px 10px rgba(245, 158, 11, 0.22);
+}
+
+.bar-fill.dark {
+  background: linear-gradient(90deg, #94a3b8, #334155);
+  box-shadow: 0 4px 10px rgba(51, 65, 85, 0.22);
+}
+
+    .changed-list-wrap {
+      margin-top: 18px;
+    }
+
+ .changed-title {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #334155;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-left: 12px;
+}
+
+.changed-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 4px;
+  height: 16px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #60a5fa, #2563eb);
+}
+    .changed-list {
+   min-height: 60px;
+  border: 1px dashed #c6d4e3;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fbff 0%, #f3f7fb 100%);
+  padding: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 13px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+  .changed-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  padding: 8px 12px;
+  margin: 4px 7px 4px 0;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.10);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.changed-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.16);
+}
+    .changed-arrow {
+      color: #64748b;
+      font-weight: 700;
+    }
+
+    .bottom-nav {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      background: rgba(255,255,255,0.94);
+      border: 1px solid rgba(255,255,255,0.95);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+      border-radius: 24px;
+      padding: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-item {
+      min-height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 6px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.3;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+
+    .nav-item.active {
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-color: #dbeafe;
+    }
+
+    .nav-item span {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 860px) {
+      .page-header {
+        align-items: flex-start;
+      }
+
+      .preview-stage.desktop .screen {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-stage.desktop .input-output-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-stage.desktop .quick-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .summary-top {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .bar-row {
+        grid-template-columns: 90px 1fr 28px;
+        gap: 8px;
+      }
+
+      .mini-stat strong {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .preview-stage.mobile .phone {
+        height: auto;
+        min-height: auto;
+      }
+
+      .preview-stage.mobile .screen {
+        height: auto;
+        grid-template-columns: 1fr;
+        overflow: visible;
+      }
+
+      .preview-stage.mobile .sidebar-card,
+      .preview-stage.mobile .content-col {
+        height: auto;
+        overflow: visible;
+      }
+
+      .preview-stage.mobile .input-output-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 10px; }
+      .page-header { margin-bottom: 12px; }
+      .view-switch {
+        width: 100%;
+        justify-content: stretch;
+      }
+      .switch-btn {
+        flex: 1;
+      }
+      .preview-stage.mobile .phone {
+        border-radius: 24px;
+      }
+      .grid-2,
+      .hero-actions,
+      .toolbar,
+      .action-grid {
+        grid-template-columns: 1fr;
+      }
+      .preview-stage.mobile .quick-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="page-title">
+      <h1>📝 Bağlamlı Türkçeleştirme: Yapay Zekâ Destekli Metin Dönüşüm Sistemi</h1>
+      <p>TÜBİTAK 2204A PROJESİ</p>
+    </div>
+    <div class="view-switch" aria-label="Görünüm değiştirici">
+      <button class="switch-btn active" id="desktopBtn" onclick="setView('desktop')">🖥️ Web</button>
+      <button class="switch-btn" id="mobileBtn" onclick="setView('mobile')">📱 Mobil</button>
+    </div>
+  </div>
+
+  <div class="preview-stage desktop" id="previewStage">
+    <div class="app-wrap">
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="screen">
+          <aside class="sidebar-card section">
+            <div class="topbar">
+              <div class="app-id">
+                <div>
+                  <h1>📝 Bağlamlı Türkçeleştirme:</h1>
+                  <p>Yapay Zekâ Destekli Metin Dönüşüm Sistemi</p>
+                </div>
+              </div>
+            </div>
+
+            <section class="quick-stats">
+              <div class="stat-card">
+                <span>Bulunan aday</span>
+                <strong id="statCandidates">0</strong>
+              </div>
+              <div class="stat-card">
+                <span>Seçilen öneri</span>
+                <strong id="statSelected">0</strong>
+              </div>
+              <div class="stat-card">
+                <span>Uygulanan dönüşüm</span>
+                <strong id="statApplied">0</strong>
+              </div>
+              <div class="stat-card">
+                <span>Metin türü</span>
+                <strong id="statContext">Akademik</strong>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-head">
+                <div>
+                  <h3>Kontrol paneli</h3>
+                  <p>Dönüşüm seçenekleri ve proje bağlantıları</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-2">
+                  <div class="field">
+                    <label for="contextTag">Metin Türü</label>
+                    <select id="contextTag" onchange="syncContextLabel()">
+                      <option value="akademik">Akademik</option>
+                      <option value="kurumsal">Kurumsal</option>
+                      <option value="egitsel">Eğitsel</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label for="level">Seviye</label>
+                    <select id="level">
+                      <option value="light">Hafif</option>
+                      <option value="balanced" selected>Dengeli</option>
+                      <option value="strict">Sıkı</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label class="check">
+                  <input type="checkbox" id="autoPick" checked />
+                  Otomatik seçim açık olsun
+                </label>
+
+                <div class="action-grid">
+                  <button class="btn-primary" onclick="analyze()">Metni Tara</button>
+                  <button class="btn-secondary" onclick="apply()">Metni Dönüştür</button>
+                </div>
+
+                <div class="single-action">
+                  <button class="btn-ghost" style="width:100%;" onclick="copyOutput()">Çıktıyı Kopyala</button>
+                </div>
+
+                <div class="helper">
+                  <b>Metni Tara</b> aday sözcükleri bulur. <b>Dönüştür</b> seçilen Türkçe karşılıkları uygular. Otomatik seçim açıksa ilk öneri işaretlenir.
+                </div>
+
+                <div id="status" class="status"></div>
+
+                <div class="single-action" style="margin-top:12px;">
+                  <button class="btn-ghost" style="width:100%; margin-bottom:10px;" onclick="showInfo()">Bilgilendirme</button>
+                  <button class="btn-ghost" style="width:100%; margin-bottom:10px;" onclick="openProjectLink()">Github Mobil Bağlantısı</button>
+                  <button class="btn-ghost" style="width:100%;" onclick="openGithubLink()">GitHub Web Bağlantısı</button>
+                </div>
+              </div>
+            </section>
+          </aside>
+
+          <main class="content-col">
+            <section class="hero-card section">
+              <h2>Metni bağlamına göre Türkçeleştirin.</h2>
+              <p>
+                Sistem yabancı kökenli terimleri bağlam içinde algılar, Türkçe karşılıklar önerir ve seçilen dönüşümleri metne uygular.
+              </p>
+              <div class="hero-actions">
+                <button class="btn-primary" onclick="analyze()">Analiz Et</button>
+                <button class="btn-ghost" onclick="loadSample()">Örnek Metin</button>
+              </div>
+            </section>
+
+            <div class="input-output-grid">
+              <section class="section">
+                <div class="section-head">
+                  <div>
+                    <h3>Girdi metni</h3>
+                    <p>Analiz edilecek metni yapıştırın</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <textarea id="inputText" placeholder="Metni buraya yapıştır..."></textarea>
+                  <div class="toolbar">
+                    <button class="btn-primary" onclick="analyze()">Analiz Et</button>
+                    <button class="btn-secondary" onclick="clearAllFields()">Temizle</button>
+                  </div>
+                  <div class="report" id="report">Henüz analiz yapılmadı.</div>
+                </div>
+              </section>
+
+              <section class="section">
+                <div class="section-head">
+                  <div>
+                    <h3>Düzenlenmiş metin</h3>
+                    <p>Seçilen karşılıklara göre oluşan çıktı</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <textarea id="outputText" placeholder="Düzenlenmiş metin burada oluşacak..."></textarea>
+                </div>
+              </section>
+            </div>
+
+            <section class="section">
+              <div class="section-head">
+                <div>
+                  <h3>Bulunan adaylar</h3>
+                  <p>Önerilen Türkçe karşılıklar</p>
+                </div>
+              </div>
+              <div class="card">
+                <div id="items" class="items-wrap">
+                  <div class="empty">
+                    Henüz aday bulunmadı.<br />
+                    Metni analiz ettikten sonra sonuçlar burada görünecek.
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-head">
+                <div>
+                  <h3>Dönüşüm özeti</h3>
+                  <p id="summaryText">Dönüşüm yapıldığında özet veriler burada görünecek.</p>
+                </div>
+              </div>
+
+              <div class="card summary-card">
+                <div class="summary-top">
+                  <div class="mini-stat">
+                    <span>Bulunan aday</span>
+                    <strong id="sumCandidates">0</strong>
+                  </div>
+                  <div class="mini-stat">
+                    <span>Değişen kelime</span>
+                    <strong id="sumChanged">0</strong>
+                  </div>
+                  <div class="mini-stat">
+                    <span>Aynı kalan</span>
+                    <strong id="sumSame">0</strong>
+                  </div>
+                  <div class="mini-stat">
+                    <span>Çıktı kelime sayısı</span>
+                    <strong id="sumWordCount">0</strong>
+                  </div>
+                </div>
+
+                <div class="summary-bars">
+                  <div class="bar-row">
+                    <span class="bar-label">Aday</span>
+                    <div class="bar-track"><div class="bar-fill" id="barCandidates"></div></div>
+                    <strong id="barCandidatesValue">0</strong>
+                  </div>
+
+                  <div class="bar-row">
+                    <span class="bar-label">Değişen</span>
+                    <div class="bar-track"><div class="bar-fill success" id="barChanged"></div></div>
+                    <strong id="barChangedValue">0</strong>
+                  </div>
+
+                  <div class="bar-row">
+                    <span class="bar-label">Aynı kalan</span>
+                    <div class="bar-track"><div class="bar-fill warning" id="barSame"></div></div>
+                    <strong id="barSameValue">0</strong>
+                  </div>
+
+                  <div class="bar-row">
+                    <span class="bar-label">Kelime sayısı</span>
+                    <div class="bar-track"><div class="bar-fill dark" id="barWordCount"></div></div>
+                    <strong id="barWordCountValue">0</strong>
+                  </div>
+                </div>
+
+                <div class="changed-list-wrap">
+                  <div class="changed-title">Değişen kelimeler</div>
+                  <div id="changedWordsList" class="changed-list">
+                    Dönüşüm yapıldığında değişen kelimeler burada listelenir.
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <div class="bottom-nav">
+          <div class="nav-item active"><span>🏠</span>Ana Sayfa</div>
+          <div class="nav-item"><span>📝</span>Metin</div>
+          <div class="nav-item"><span>🔎</span>Analiz</div>
+          <div class="nav-item"><span>📊</span>Özet</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let lastItems = [];
+    let lastAppliedCount = 0;
+    let currentView = 'desktop';
+
+    function setView(view) {
+      currentView = view;
+      const stage = document.getElementById('previewStage');
+      const mobileBtn = document.getElementById('mobileBtn');
+      const desktopBtn = document.getElementById('desktopBtn');
+
+      stage.classList.remove('mobile', 'desktop');
+      stage.classList.add(view);
+
+      mobileBtn.classList.toggle('active', view === 'mobile');
+      desktopBtn.classList.toggle('active', view === 'desktop');
+    }
+
+    function setStatus(msg, type) {
+      const el = document.getElementById("status");
+      if (!msg) {
+        el.className = "status";
+        el.innerText = "";
+        return;
+      }
+      el.className = "status " + (type || "warn");
+      el.innerText = msg;
+    }
+
+    function escapeHtml(str) {
+      return (str || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function syncContextLabel() {
+      const val = document.getElementById("contextTag").value;
+      const map = {
+        akademik: "Akademik",
+        kurumsal: "Kurumsal",
+        egitsel: "Eğitsel"
+      };
+      document.getElementById("statContext").innerText = map[val] || val;
+    }
+
+    function updateSummary() {
+      const candidates = lastItems.length;
+      const picks = [...document.querySelectorAll('.pick')].filter(x => x.value).length;
+
+      document.getElementById("statCandidates").innerText = candidates;
+      document.getElementById("statSelected").innerText = picks;
+      document.getElementById("statApplied").innerText = lastAppliedCount;
+    }
+
+    function countWords(text) {
+      return (text || "").trim() ? ((text.trim().match(/\S+/g) || []).length) : 0;
+    }
+
+    function updateBeautifulSummary(changedPairs = []) {
+      const candidates = lastItems.length;
+      const changed = changedPairs.length;
+      const same = Math.max(candidates - changed, 0);
+      const outputText = document.getElementById("outputText").value || "";
+      const wordCount = countWords(outputText);
+
+      document.getElementById("sumCandidates").innerText = candidates;
+      document.getElementById("sumChanged").innerText = changed;
+      document.getElementById("sumSame").innerText = same;
+      document.getElementById("sumWordCount").innerText = wordCount;
+
+      document.getElementById("barCandidatesValue").innerText = candidates;
+      document.getElementById("barChangedValue").innerText = changed;
+      document.getElementById("barSameValue").innerText = same;
+      document.getElementById("barWordCountValue").innerText = wordCount;
+
+      const maxVal = Math.max(candidates, changed, same, wordCount, 1);
+
+      document.getElementById("barCandidates").style.width = `${(candidates / maxVal) * 100}%`;
+      document.getElementById("barChanged").style.width = `${(changed / maxVal) * 100}%`;
+      document.getElementById("barSame").style.width = `${(same / maxVal) * 100}%`;
+      document.getElementById("barWordCount").style.width = `${(wordCount / maxVal) * 100}%`;
+
+      const summaryText = document.getElementById("summaryText");
+      if (changed > 0) {
+        summaryText.innerText = `${changed} kelime dönüştürüldü, ${same} aday aynı bırakıldı.`;
+      } else {
+        summaryText.innerText = "Dönüşüm yapıldığında özet veriler burada görünecek.";
+      }
+
+      const list = document.getElementById("changedWordsList");
+      if (!changedPairs.length) {
+        list.innerHTML = "Dönüşüm yapıldığında değişen kelimeler burada listelenir.";
+        return;
+      }
+
+      list.innerHTML = changedPairs.map(item => `
+        <span class="changed-chip">
+          ${escapeHtml(item.from)}
+          <span class="changed-arrow">→</span>
+          ${escapeHtml(item.to)}
+        </span>
+      `).join("");
+    }
+
+    async function analyze() {
+      setStatus("", "");
+      syncContextLabel();
+
+      const user_id = "default";
+      const context_tag = document.getElementById("contextTag").value;
+      const level = document.getElementById("level").value;
+      const text = document.getElementById("inputText").value;
+
+      if (!text.trim()) {
+        setStatus("Girdi metni boş.", "err");
+        return;
+      }
+
+      try {
+        const res = await fetch("/analyze", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ user_id, context_tag, level, text })
+        });
+
+        if (!res.ok) {
+          const t = await res.text();
+          throw new Error(t || res.status);
+        }
+
+        const data = await res.json();
+        lastItems = data.items || [];
+        lastAppliedCount = 0;
+
+        document.getElementById("report").innerText =
+          `Bulunan kelime: ${data.report?.candidates_found ?? lastItems.length} | Seviye: ${data.report?.level ?? level}`;
+
+        renderItems();
+        updateSummary();
+        updateBeautifulSummary([]);
+
+        if (lastItems.length === 0) setStatus("Terim bulunamadı.", "ok");
+        else setStatus(`${lastItems.length} aday bulundu. Uygun karşılıkları seçebilirsiniz.`, "ok");
+      } catch (e) {
+        setStatus("API hatası / bağlantı yok: " + e.message, "err");
+      }
+    }
+
+    function renderItems() {
+      const div = document.getElementById("items");
+      div.innerHTML = "";
+
+      if (lastItems.length === 0) {
+        div.innerHTML = `
+          <div class="empty">
+            Henüz aday bulunmadı.<br />
+            Metni analiz ettikten sonra sonuçlar burada görünecek.
+          </div>`;
+        return;
+      }
+
+      const autoPick = document.getElementById("autoPick").checked;
+
+      lastItems.forEach((it, index) => {
+        const suggestions = it.suggestions || it.replacements || it.alternatives || it.candidates || it.turkish_suggestions || it.oneriler || [];
+        const firstSuggestion = suggestions[0];
+        const firstScore = (firstSuggestion && typeof firstSuggestion === 'object' && typeof firstSuggestion.score === 'number')
+          ? firstSuggestion.score
+          : null;
+        const bestScore = firstScore !== null
+          ? Math.max(0, Math.min(100, Math.round(firstScore * 100)))
+          : Math.max(20, 85 - (index % 5) * 9);
+
+        const options = suggestions.map(s => {
+          if (typeof s === 'string') {
+            const value = escapeHtml(s);
+            return `<option value="${value}">${value}</option>`;
+          }
+          const value = escapeHtml(s.suggestion || s.value || s.text || s.label || '');
+          const label = escapeHtml(s.label || s.suggestion || s.value || s.text || 'Öneri');
+          const score = (typeof s.score === "number") ? (Math.round(s.score * 100) / 100) : null;
+          return `<option value="${value}">${score !== null ? `${label} (puan: ${score})` : label}</option>`;
+        }).join("");
+
+        const el = document.createElement("div");
+        el.className = "item";
+        el.innerHTML = `
+          <div class="item-top">
+            <div class="term-box">
+              <strong>${escapeHtml(it.original)}</strong>
+              <span>Kök: ${escapeHtml(it.foreign_norm || it.original)}</span>
+            </div>
+            <div class="chip">Aday ${index + 1}</div>
+          </div>
+
+          <div class="context">${escapeHtml(it.context || "Bağlam bilgisi bulunamadı.")}</div>
+
+          <div class="progress-row">
+            <span>Bağlam puanı</span>
+            <span>%${bestScore}</span>
+          </div>
+          <div class="progress"><span style="width:${bestScore}%"></span></div>
+
+          <div class="field">
+            <label>Öneri seç</label>
+            <select class="pick" data-id="${it.id}" onchange="updateSummary()">
+              <option value="">(Geç)</option>
+              ${options}
+            </select>
+            <div class="helper" style="margin-top:8px;">
+              ${suggestions.length ? `${suggestions.length} öneri bulundu.` : `Bu kelime için öneri gelmedi.`}
+            </div>
+            <details class="helper" style="margin-top:8px; padding:8px 10px; background:#f8fafc; border:1px solid #e5e7eb; border-radius:12px;">
+              <summary style="cursor:pointer; font-weight:700;">Hata ayıklama verisi</summary>
+              <div style="margin-top:6px;"><b>Alanlar:</b> ${escapeHtml(Object.keys(it).join(', '))}</div>
+              <pre style="white-space:pre-wrap; word-break:break-word; margin:8px 0 0; font-size:11px; line-height:1.5;">${escapeHtml(JSON.stringify(it, null, 2))}</pre>
+            </details>
+            <div class="helper" style="display:none;"></div>
+          </div>
+
+          <div class="field" style="margin-bottom:0;">
+            <label>Reddedilen öneriler</label>
+            <input class="rej" data-id="${it.id}" placeholder="örn: geri bildirim, dönüt" />
+          </div>
+        `;
+        div.appendChild(el);
+
+        if (autoPick) {
+          const sel = el.querySelector(".pick");
+          if (sel && sel.options.length > 1) sel.value = sel.options[1].value;
+        }
+      });
+
+      updateSummary();
+    }
+
+    async function apply() {
+      if (lastItems.length === 0) {
+        await analyze();
+        if (lastItems.length === 0) return;
+      }
+
+      const user_id = "default";
+      const context_tag = document.getElementById("contextTag").value;
+      const level = document.getElementById("level").value;
+      const text = document.getElementById("inputText").value;
+
+      const picks = document.querySelectorAll(".pick");
+      const rejs = document.querySelectorAll(".rej");
+
+      const choices = lastItems.map(it => {
+        const pick = [...picks].find(p => p.dataset.id === String(it.id));
+        const rej = [...rejs].find(r => r.dataset.id === String(it.id));
+        return {
+          candidate_id: it.id,
+          chosen: pick && pick.value ? pick.value : null,
+          rejected: rej && rej.value ? rej.value.split(",").map(x => x.trim()).filter(Boolean) : []
+        };
+      });
+
+      const changedPairs = choices
+        .filter(ch => ch.chosen)
+        .map(ch => {
+          const item = lastItems.find(it => String(it.id) === String(ch.candidate_id));
+          return {
+            from: item?.original || "",
+            to: ch.chosen || ""
+          };
+        });
+
+      try {
+        const res = await fetch("/apply", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ user_id, context_tag, level, text, choices })
+        });
+
+        if (!res.ok) {
+          const t = await res.text();
+          throw new Error(t || res.status);
+        }
+
+        const data = await res.json();
+        document.getElementById("outputText").value = data.new_text || "";
+        lastAppliedCount = data.applied_count || 0;
+        updateSummary();
+        updateBeautifulSummary(changedPairs);
+        setStatus(`Uygulandı: ${lastAppliedCount}`, "ok");
+      } catch (e) {
+        setStatus("API hatası / bağlantı yok: " + e.message, "err");
+      }
+    }
+
+    function loadSample() {
+      document.getElementById("inputText").value = `Bu proje kapsamında geliştirilen platform, kullanıcıdan alınan metni analiz ederek bağlama göre optimize edilmiş Türkçe öneriler sunmaktadır. Sistem, dashboard üzerinden performans takibi yaparken backend ve frontend arasında entegre bir yapı kurar. Kullanıcı feedback vererek önerileri revize edebilir ve yeni versiyonlar için güncelleme sürecine katkı sağlar.`;
+      setStatus("Örnek metin yüklendi.", "ok");
+    }
+
+    function clearAllFields() {
+      document.getElementById("inputText").value = "";
+      document.getElementById("outputText").value = "";
+      document.getElementById("items").innerHTML = `
+        <div class="empty">
+          Henüz aday bulunmadı.<br />
+          Metni analiz ettikten sonra sonuçlar burada görünecek.
+        </div>`;
+      document.getElementById("report").innerText = "Henüz analiz yapılmadı.";
+      lastItems = [];
+      lastAppliedCount = 0;
+      updateSummary();
+      updateBeautifulSummary([]);
+      setStatus("Alanlar temizlendi.", "ok");
+    }
+
+    async function copyOutput() {
+      const text = document.getElementById("outputText").value;
+      if (!text.trim()) {
+        setStatus("Kopyalanacak çıktı yok.", "warn");
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(text);
+        setStatus("Düzenlenmiş metin panoya kopyalandı.", "ok");
+      } catch {
+        setStatus("Kopyalama başarısız oldu. Metni elle seçebilirsiniz.", "err");
+      }
+    }
+
+    function showInfo() {
+      alert("Bu proje, Mutlu ARSLANOĞLU’nun danışmanlığı ve desteğiyle; Alptuğ Polat General, Ege Pelen ve Emir Sondergaard tarafından hazırlanmıştır.");
+    }
+
+    function openProjectLink() {
+      window.open("https://github.com/mutluarslanoglu/BaglamliTurkcelestirme-YapayZek-DestekliMetinDonusumSistemiFlutter", "_blank");
+    }
+
+    function openGithubLink() {
+      window.open("https://github.com/mutluarslanoglu/BaglamliTurkcelestirmeYapayZekaDestekliMetinDonusumSistemi", "_blank");
+    }
+
+    syncContextLabel();
+    updateSummary();
+    updateBeautifulSummary([]);
+    setView('desktop');
+  </script>
+</body>
+</html>

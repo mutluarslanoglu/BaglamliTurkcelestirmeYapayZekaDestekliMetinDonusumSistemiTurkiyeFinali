@@ -1,0 +1,4244 @@
+{
+  "optimize": [
+    "eniyilemek",
+    "iyileştirmek",
+    "en uygun hâle getirmek"
+  ],
+  "optimizasyon": [
+    "eniyileme",
+    "iyileştirme",
+    "en uygunlaştırma"
+  ],
+  "performans": [
+    "başarım",
+    "verim",
+    "çalışma başarısı"
+  ],
+  "platform": [
+    "ortam",
+    "altyapı",
+    "zemin"
+  ],
+  "implementasyon": [
+    "uygulama",
+    "gerçekleme",
+    "hayata geçirme"
+  ],
+  "validasyon": [
+    "doğrulama",
+    "geçerleme"
+  ],
+  "verifikasyon": [
+    "doğrulama",
+    "denetleyerek doğrulama"
+  ],
+  "entegrasyon": [
+    "bütünleşme",
+    "uyumlandırma",
+    "birleştirme"
+  ],
+  "entegre": [
+    "bütünleşik",
+    "uyumlu",
+    "birleşik"
+  ],
+  "konsept": [
+    "kavram",
+    "tasarım fikri",
+    "yaklaşım"
+  ],
+  "analiz": [
+    "çözümleme",
+    "inceleme",
+    "irdeleme"
+  ],
+  "feedback": [
+    "geri bildirim",
+    "dönüt"
+  ],
+  "update": [
+    "güncelleme",
+    "yenileme"
+  ],
+  "download": [
+    "indirme",
+    "yükü indirme"
+  ],
+  "upload": [
+    "yükleme",
+    "karşıya yükleme"
+  ],
+  "online": [
+    "çevrim içi",
+    "internete bağlı"
+  ],
+  "offline": [
+    "çevrim dışı",
+    "internetsiz"
+  ],
+  "prosedür": [
+    "yordam",
+    "işleyiş",
+    "işlem sırası"
+  ],
+  "proses": [
+    "süreç",
+    "işleyiş"
+  ],
+  "strateji": [
+    "izlem",
+    "yol haritası",
+    "yaklaşım"
+  ],
+  "vizyon": [
+    "uzun vadeli hedef",
+    "gelecek tasarımı"
+  ],
+  "misyon": [
+    "görev",
+    "amaç"
+  ],
+  "inovasyon": [
+    "yenilik",
+    "yenilikçilik"
+  ],
+  "sinerji": [
+    "uyumlu güç birliği",
+    "birlikte etki"
+  ],
+  "revize": [
+    "gözden geçirmek",
+    "yeniden düzenlemek"
+  ],
+  "revizyon": [
+    "gözden geçirme",
+    "yeniden düzenleme"
+  ],
+  "dashboard": [
+    "gösterge paneli",
+    "izleme paneli"
+  ],
+  "panel": [
+    "ekran",
+    "gösterge paneli"
+  ],
+  "modül": [
+    "birim",
+    "bileşen"
+  ],
+  "parametre": [
+    "değişken",
+    "ayar değeri"
+  ],
+  "konfigürasyon": [
+    "yapılandırma",
+    "ayarlar"
+  ],
+  "setup": [
+    "kurulum",
+    "ayar"
+  ],
+  "deploy": [
+    "yayına almak",
+    "çalışır hâle getirmek"
+  ],
+  "deployment": [
+    "yayınlama",
+    "kurulum"
+  ],
+  "framework": [
+    "çatı",
+    "altyapı çerçevesi"
+  ],
+  "library": [
+    "kütüphane"
+  ],
+  "backend": [
+    "arka uç",
+    "sunucu tarafı"
+  ],
+  "frontend": [
+    "ön yüz",
+    "istemci tarafı"
+  ],
+  "database": [
+    "veritabanı"
+  ],
+  "cloud": [
+    "bulut"
+  ],
+  "hosting": [
+    "barındırma"
+  ],
+  "domain": [
+    "alan adı"
+  ],
+  "authentication": [
+    "kimlik doğrulama"
+  ],
+  "authorization": [
+    "yetkilendirme"
+  ],
+  "token": [
+    "jeton",
+    "erişim anahtarı"
+  ],
+  "session": [
+    "oturum"
+  ],
+  "cache": [
+    "önbellek"
+  ],
+  "bug": [
+    "hata",
+    "yazılım hatası"
+  ],
+  "issue": [
+    "sorun",
+    "kayıtlı sorun"
+  ],
+  "fix": [
+    "düzeltme",
+    "onarım"
+  ],
+  "patch": [
+    "yama"
+  ],
+  "prompt": [
+    "istem",
+    "girdi yönergesi",
+    "komut metni"
+  ],
+  "dataset": [
+    "veri kümesi",
+    "veri takımı"
+  ],
+  "inference": [
+    "çıkarım",
+    "tahmin yürütme"
+  ],
+  "embedding": [
+    "gömme gösterimi",
+    "vektör gösterimi"
+  ],
+  "tokenizer": [
+    "sözcükleyici",
+    "parçalayıcı"
+  ],
+  "classifier": [
+    "sınıflandırıcı"
+  ],
+  "segmentation": [
+    "bölütleme",
+    "parçalara ayırma"
+  ],
+  "detection": [
+    "tespit",
+    "algılama"
+  ],
+  "annotation": [
+    "etiketleme",
+    "açıklama ekleme"
+  ],
+  "label": [
+    "etiket",
+    "sınıf adı"
+  ],
+  "pipeline": [
+    "iş akışı hattı",
+    "işlem hattı"
+  ],
+  "feature": [
+    "özellik",
+    "ayırt edici nitelik"
+  ],
+  "vector": [
+    "yönlü büyüklük",
+    "vektör"
+  ],
+  "cluster": [
+    "küme",
+    "öbek"
+  ],
+  "sampling": [
+    "örnekleme"
+  ],
+  "bias": [
+    "yanlılık",
+    "eğilim hatası"
+  ],
+  "drift": [
+    "kayma",
+    "sapma"
+  ],
+  "score": [
+    "puan",
+    "değer"
+  ],
+  "ranking": [
+    "sıralama"
+  ],
+  "prompting": [
+    "istem oluşturma",
+    "yönerge verme"
+  ],
+  "repository": [
+    "depo",
+    "kod deposu"
+  ],
+  "commit": [
+    "değişiklik kaydı",
+    "işleme kaydetme"
+  ],
+  "branch": [
+    "dal",
+    "geliştirme dalı"
+  ],
+  "merge": [
+    "birleştirme"
+  ],
+  "rollback": [
+    "geri alma",
+    "önceki duruma döndürme"
+  ],
+  "container": [
+    "taşıyıcı ortam",
+    "yalıtılmış çalışma birimi"
+  ],
+  "sandbox": [
+    "yalıtılmış deneme ortamı",
+    "güvenli deneme alanı"
+  ],
+  "queue": [
+    "kuyruk",
+    "bekleme sırası"
+  ],
+  "thread": [
+    "iş parçacığı",
+    "ileti dizisi"
+  ],
+  "cron": [
+    "zamanlanmış görev",
+    "zamanlayıcı işi"
+  ],
+  "webhook": [
+    "olay bildirimi kancası",
+    "otomatik çağrı bildirimi"
+  ],
+  "endpoint": [
+    "uç nokta",
+    "erişim noktası"
+  ],
+  "request": [
+    "istek",
+    "çağrı"
+  ],
+  "response": [
+    "yanıt",
+    "geri dönüş"
+  ],
+  "payload": [
+    "taşınan veri",
+    "iletinin içeriği"
+  ],
+  "timeout": [
+    "zaman aşımı"
+  ],
+  "latency": [
+    "gecikme süresi",
+    "yanıt gecikmesi"
+  ],
+  "throughput": [
+    "işlem hacmi",
+    "geçiş kapasitesi"
+  ],
+  "backup": [
+    "yedek",
+    "yedek kopya"
+  ],
+  "snapshot": [
+    "anlık görüntü",
+    "durum kopyası"
+  ],
+  "scaling": [
+    "ölçekleme",
+    "kapasite büyütme"
+  ],
+  "failover": [
+    "yedek sisteme geçiş",
+    "aksama durumunda devretme"
+  ],
+  "trigger": [
+    "tetikleyici",
+    "başlatıcı etken"
+  ],
+  "wrapper": [
+    "sarmalayıcı",
+    "dış katman"
+  ],
+  "parser": [
+    "çözümleyici",
+    "ayrıştırıcı"
+  ],
+  "serializer": [
+    "sıralayıcı",
+    "biçime dönüştürücü"
+  ],
+  "formatter": [
+    "biçimleyici",
+    "düzenleyici"
+  ],
+  "repositorysync": [
+    "depo eşitleme",
+    "kod deposu eşleme"
+  ],
+  "workshop": [
+    "uygulamalı çalışma",
+    "atölye"
+  ],
+  "webinar": [
+    "çevrim içi seminer",
+    "ağ semineri"
+  ],
+  "mentor": [
+    "rehber",
+    "danışman"
+  ],
+  "coaching": [
+    "koçluk",
+    "yönlendirme desteği"
+  ],
+  "startup": [
+    "girişim",
+    "yeni girişim"
+  ],
+  "networking": [
+    "ilişki ağı kurma",
+    "bağlantı geliştirme"
+  ],
+  "roadmap": [
+    "yol haritası",
+    "gelişim planı"
+  ],
+  "kickoff": [
+    "başlangıç toplantısı",
+    "açılış görüşmesi"
+  ],
+  "sprint": [
+    "kısa geliştirme dönemi",
+    "hızlı çalışma çevrimi"
+  ],
+  "backlog": [
+    "iş listesi",
+    "bekleyen işler listesi"
+  ],
+  "task": [
+    "görev",
+    "iş"
+  ],
+  "milestone": [
+    "kilometre taşı",
+    "önemli aşama"
+  ],
+  "deadline": [
+    "son tarih",
+    "tamamlama süresi"
+  ],
+  "brief": [
+    "kısa bilgilendirme",
+    "özet belge"
+  ],
+  "agenda": [
+    "gündem",
+    "toplantı planı"
+  ],
+  "minutes": [
+    "toplantı notları",
+    "görüşme kaydı"
+  ],
+  "summary": [
+    "özet",
+    "kısa değerlendirme"
+  ],
+  "draft": [
+    "taslak",
+    "ön metin"
+  ],
+  "template": [
+    "şablon",
+    "örnek düzen"
+  ],
+  "checklist": [
+    "denetim listesi",
+    "kontrol listesi"
+  ],
+  "brand": [
+    "marka",
+    "kurumsal kimlik"
+  ],
+  "slogan": [
+    "özdeyiş",
+    "tanıtım sözü"
+  ],
+  "campaign": [
+    "kampanya",
+    "tanıtım çalışması"
+  ],
+  "content": [
+    "içerik"
+  ],
+  "creator": [
+    "üretici",
+    "içerik üreticisi"
+  ],
+  "influencer": [
+    "etki üreticisi",
+    "etkileyici kişi"
+  ],
+  "caption": [
+    "açıklama yazısı",
+    "görsel altı metin"
+  ],
+  "post": [
+    "gönderi",
+    "paylaşım"
+  ],
+  "story": [
+    "hikâye paylaşımı",
+    "kısa gönderi"
+  ],
+  "reel": [
+    "kısa video",
+    "akış videosu"
+  ],
+  "stream": [
+    "canlı yayın",
+    "akış"
+  ],
+  "podcast": [
+    "sesli yayın",
+    "bölümlü ses yayını"
+  ],
+  "broadcast": [
+    "yayın",
+    "genel duyuru yayını"
+  ],
+  "moderation": [
+    "içerik denetimi",
+    "düzenleme gözetimi"
+  ],
+  "filter": [
+    "süzgeç",
+    "eleme ölçütü"
+  ],
+  "theme": [
+    "tema",
+    "görsel konu düzeni"
+  ],
+  "layout": [
+    "yerleşim",
+    "sayfa düzeni"
+  ],
+  "interface": [
+    "arayüz",
+    "etkileşim yüzeyi"
+  ],
+  "usability": [
+    "kullanılabilirlik",
+    "kullanım kolaylığı"
+  ],
+  "accessibility": [
+    "erişilebilirlik",
+    "ulaşılabilir kullanım"
+  ],
+  "login": [
+    "oturum açma",
+    "giriş yapma"
+  ],
+  "logout": [
+    "oturumu kapatma",
+    "çıkış yapma"
+  ],
+  "profile": [
+    "profil",
+    "kullanıcı kimliği sayfası"
+  ],
+  "notification": [
+    "bildirim",
+    "uyarı iletisi"
+  ],
+  "message": [
+    "ileti",
+    "mesaj"
+  ],
+  "channel": [
+    "kanal",
+    "iletişim yolu"
+  ],
+  "forum": [
+    "tartışma alanı",
+    "forum"
+  ],
+  "comment": [
+    "yorum",
+    "açıklama notu"
+  ],
+  "archive": [
+    "arşiv",
+    "saklanan kayıt"
+  ],
+  "restore": [
+    "geri yükleme",
+    "eski durumu açma"
+  ],
+  "sync": [
+    "eşitleme",
+    "uyumlu güncelleme"
+  ],
+  "scan": [
+    "tarama",
+    "gözden geçirme"
+  ],
+  "search": [
+    "arama",
+    "bulma işlemi"
+  ],
+  "browse": [
+    "göz atma",
+    "inceleme"
+  ],
+  "click": [
+    "tıklama"
+  ],
+  "share": [
+    "paylaşma",
+    "aktarma"
+  ],
+  "bookmark": [
+    "yer imi",
+    "kayıtlı bağlantı"
+  ],
+  "favorite": [
+    "sık kullanılan",
+    "beğenilen öğe"
+  ],
+  "subscription": [
+    "abonelik",
+    "düzenli üyelik"
+  ],
+  "premium": [
+    "üst paket",
+    "özel sürüm"
+  ],
+  "upgrade": [
+    "üst sürüme geçme",
+    "yükseltme"
+  ],
+  "downgrade": [
+    "alt sürüme geçme",
+    "düşürme"
+  ],
+  "trial": [
+    "deneme sürümü",
+    "deneme kullanımı"
+  ],
+  "compliance": [
+    "uyum",
+    "kurallara uygunluk"
+  ],
+  "privacy": [
+    "gizlilik",
+    "özel yaşam koruması"
+  ],
+  "consent": [
+    "rıza",
+    "onay"
+  ],
+  "phishing": [
+    "oltalama",
+    "aldatıcı veri toplama"
+  ],
+  "spam": [
+    "istenmeyen ileti",
+    "gereksiz toplu mesaj"
+  ],
+  "scam": [
+    "dolandırıcılık düzeni",
+    "aldatma girişimi"
+  ],
+  "malware": [
+    "zararlı yazılım"
+  ],
+  "firewall": [
+    "güvenlik duvarı"
+  ],
+  "encryption": [
+    "şifreleme",
+    "kriptolama"
+  ],
+  "signature": [
+    "imza",
+    "sayısal imza"
+  ],
+  "certificate": [
+    "sertifika",
+    "belge"
+  ],
+  "compliancecheck": [
+    "uygunluk denetimi",
+    "kural uyumu kontrolü"
+  ],
+  "insight": [
+    "çıkarım",
+    "içgörü"
+  ],
+  "trend": [
+    "eğilim",
+    "yönelim"
+  ],
+  "forecast": [
+    "öngörü",
+    "tahmin"
+  ],
+  "retention": [
+    "elde tutma",
+    "koruma oranı"
+  ],
+  "engagement": [
+    "etkileşim",
+    "katılım düzeyi"
+  ],
+  "conversion": [
+    "dönüşüm",
+    "hedefe çevirme"
+  ],
+  "funnel": [
+    "dönüşüm hunisi",
+    "aşamalı akış"
+  ],
+  "persona": [
+    "kullanıcı profili",
+    "temsilî kullanıcı"
+  ],
+  "journey": [
+    "kullanıcı yolculuğu",
+    "deneyim akışı"
+  ],
+  "feedbackloop": [
+    "geri bildirim döngüsü",
+    "dönüt çevrimi"
+  ],
+  "fine-tuning": [
+    "ince ayar",
+    "uyarlamalı eğitim"
+  ],
+  "pretraining": [
+    "ön eğitim",
+    "ön öğrenme"
+  ],
+  "multimodal": [
+    "çok kipli",
+    "çok türlü veri kullanan"
+  ],
+  "retrieval": [
+    "geri getirme",
+    "erişimle bulma"
+  ],
+  "reranking": [
+    "yeniden sıralama",
+    "ikinci aşama sıralama"
+  ],
+  "generation": [
+    "üretim",
+    "oluşturma"
+  ],
+  "generative": [
+    "üretici",
+    "oluşturucu"
+  ],
+  "reasoning": [
+    "akıl yürütme",
+    "çıkarımsal düşünme"
+  ],
+  "transcription": [
+    "yazıya dökme",
+    "metne aktarma"
+  ],
+  "summarization": [
+    "özetleme",
+    "kısaltılmış anlatım"
+  ],
+  "translation": [
+    "çeviri",
+    "dil aktarma"
+  ],
+  "paraphrase": [
+    "yeniden ifade",
+    "başka sözlerle anlatım"
+  ],
+  "keyword": [
+    "anahtar kelime",
+    "kilit sözcük"
+  ],
+  "query": [
+    "sorgu",
+    "arama isteği"
+  ],
+  "index": [
+    "dizin",
+    "arama dizini"
+  ],
+  "metadata": [
+    "üst veri",
+    "tanımlayıcı veri"
+  ],
+  "schema": [
+    "şema",
+    "veri yapısı planı"
+  ],
+  "workflow": [
+    "iş akışı",
+    "çalışma düzeni"
+  ],
+  "orchestration": [
+    "eşgüdüm",
+    "iş akışı yönetimi"
+  ],
+  "agent": [
+    "aracı",
+    "yapay zekâ yordamcısı"
+  ],
+  "assistant": [
+    "yardımcı",
+    "sayısal yardımcı"
+  ],
+  "chatbot": [
+    "sohbet botu",
+    "konuşan yardımcı"
+  ],
+  "hallucination": [
+    "uydurma çıktı",
+    "gerçek dışı üretim"
+  ],
+  "grounding": [
+    "dayanaklandırma",
+    "kaynağa bağlama"
+  ],
+  "context": [
+    "bağlam",
+    "durum çevresi"
+  ],
+  "contextual": [
+    "bağlamsal",
+    "duruma bağlı"
+  ],
+  "intent": [
+    "niyet",
+    "kullanıcı amacı"
+  ],
+  "slot": [
+    "alan",
+    "bilgi yuvası"
+  ],
+  "dialogue": [
+    "diyalog",
+    "karşılıklı konuşma"
+  ],
+  "utterance": [
+    "sözce",
+    "ifade birimi"
+  ],
+  "speech": [
+    "konuşma",
+    "sesli anlatım"
+  ],
+  "vision": [
+    "görü",
+    "görsel algı"
+  ],
+  "ocr": [
+    "optik karakter tanıma",
+    "görselden yazı okuma"
+  ],
+  "asr": [
+    "otomatik konuşma tanıma",
+    "ses tanıma"
+  ],
+  "tts": [
+    "metinden konuşma",
+    "yazıyı sese çevirme"
+  ],
+  "bandwidth": [
+    "bant genişliği",
+    "veri taşıma kapasitesi"
+  ],
+  "scalability": [
+    "ölçeklenebilirlik",
+    "büyüyebilme yetisi"
+  ],
+  "availability": [
+    "erişilebilirlik",
+    "hazır bulunurluk"
+  ],
+  "reliability": [
+    "güvenilirlik",
+    "sağlam çalışma"
+  ],
+  "maintainability": [
+    "bakım kolaylığı",
+    "sürdürülebilir bakım"
+  ],
+  "observability": [
+    "gözlemlenebilirlik",
+    "izlenebilirlik"
+  ],
+  "trace": [
+    "iz kaydı",
+    "işlem izi"
+  ],
+  "telemetry": [
+    "uzak ölçüm",
+    "çalışma verisi izleme"
+  ],
+  "monitoring": [
+    "izleme",
+    "gözetim"
+  ],
+  "alert": [
+    "uyarı",
+    "bildirim uyarısı"
+  ],
+  "incident": [
+    "olay",
+    "aksaklık vakası"
+  ],
+  "outage": [
+    "kesinti",
+    "hizmet durması"
+  ],
+  "fallback": [
+    "yedek yol",
+    "geri dönüş seçeneği"
+  ],
+  "redundancy": [
+    "yedeklilik",
+    "fazladan güvence yapısı"
+  ],
+  "resilience": [
+    "dayanıklılık",
+    "aksaklığa karşı direnç"
+  ],
+  "migration": [
+    "taşıma",
+    "geçiş işlemi"
+  ],
+  "compatibility": [
+    "uyumluluk",
+    "birlikte çalışabilirlik"
+  ],
+  "dependency": [
+    "bağımlılık",
+    "gerekli bileşen"
+  ],
+  "package": [
+    "paket",
+    "yazılım paketi"
+  ],
+  "pull request": [
+    "çekme isteği",
+    "birleştirme önerisi"
+  ],
+  "code review": [
+    "kod incelemesi",
+    "kod gözden geçirme"
+  ],
+  "lint": [
+    "biçim denetimi",
+    "kod düzen denetimi"
+  ],
+  "testing": [
+    "test etme",
+    "sınama"
+  ],
+  "unit test": [
+    "birim testi",
+    "tekil parça sınaması"
+  ],
+  "integration test": [
+    "bütünleşme testi",
+    "birleşik çalışma sınaması"
+  ],
+  "regression": [
+    "gerileme hatası",
+    "önceden çalışan kısmın bozulması"
+  ],
+  "coverage": [
+    "kapsam",
+    "test kapsama oranı"
+  ],
+  "staging": [
+    "ön yayın ortamı",
+    "deneme yayını ortamı"
+  ],
+  "production": [
+    "canlı ortam",
+    "gerçek kullanım ortamı"
+  ],
+  "virtualization": [
+    "sanallaştırma",
+    "soyut donanım kullanımı"
+  ],
+  "node": [
+    "düğüm",
+    "ağ noktası"
+  ],
+  "gateway": [
+    "geçit",
+    "erişim kapısı"
+  ],
+  "proxy": [
+    "aracı sunucu",
+    "vekil sunucu"
+  ],
+  "load balancer": [
+    "yük dengeleyici",
+    "trafik dağıtıcı"
+  ],
+  "broker": [
+    "aracı hizmet",
+    "ileti aktarım aracısı"
+  ],
+  "cache invalidation": [
+    "önbellek geçersizleme",
+    "önbelleği yenileme"
+  ],
+  "replication": [
+    "çoğaltma",
+    "eş kopyalama"
+  ],
+  "sharding": [
+    "parçalara bölme",
+    "dağıtık parçalama"
+  ],
+  "decryption": [
+    "şifre çözme",
+    "giz açma"
+  ],
+  "hash": [
+    "özet değer",
+    "karma değer"
+  ],
+  "salt": [
+    "tuz değeri",
+    "ek güvenlik değeri"
+  ],
+  "ransomware": [
+    "fidye yazılımı",
+    "kilitleyici zararlı yazılım"
+  ],
+  "spoofing": [
+    "taklit saldırısı",
+    "kimlik yanıltması"
+  ],
+  "breach": [
+    "ihlâl",
+    "güvenlik sızıntısı"
+  ],
+  "vulnerability": [
+    "açıklık",
+    "zayıf nokta"
+  ],
+  "exploit": [
+    "istismar kodu",
+    "açığı kullanma aracı"
+  ],
+  "threat": [
+    "tehdit",
+    "risk unsuru"
+  ],
+  "risk": [
+    "tehlike olasılığı",
+    "risk"
+  ],
+  "mitigation": [
+    "azaltma",
+    "önleyici düşürme"
+  ],
+  "policy": [
+    "ilke",
+    "kural metni"
+  ],
+  "anonymization": [
+    "kimliksizleştirme",
+    "adsızlaştırma"
+  ],
+  "pseudonymization": [
+    "takma kimlikleştirme",
+    "örtük kimlikleştirme"
+  ],
+  "navigation": [
+    "gezinti",
+    "yönlendirmeli dolaşım"
+  ],
+  "responsive": [
+    "uyumlu",
+    "ekrana göre uyarlanır"
+  ],
+  "prototype testing": [
+    "ön örnek testi",
+    "taslak denemesi"
+  ],
+  "onboarding": [
+    "başlangıç uyumu",
+    "kullanıcı alıştırma süreci"
+  ],
+  "touchpoint": [
+    "temas noktası",
+    "etkileşim noktası"
+  ],
+  "bounce": [
+    "hemen çıkış",
+    "tek sayfa terk edişi"
+  ],
+  "branding": [
+    "markalama",
+    "marka kimliği oluşturma"
+  ],
+  "positioning": [
+    "konumlandırma",
+    "algı yerleştirme"
+  ],
+  "audience": [
+    "hedef kitle",
+    "izleyici topluluğu"
+  ],
+  "reach": [
+    "erişim",
+    "ulaşılan kişi sayısı"
+  ],
+  "impression": [
+    "gösterim",
+    "görünme sayısı"
+  ],
+  "thumbnail": [
+    "küçük ön izleme",
+    "kapak görseli"
+  ],
+  "storyboard": [
+    "hikâye taslağı",
+    "sahne planı"
+  ],
+  "script": [
+    "senaryo metni",
+    "konuşma metni"
+  ],
+  "voice-over": [
+    "seslendirme",
+    "arka plan anlatımı"
+  ],
+  "render": [
+    "işlemek",
+    "görüntü çıktısı oluşturmak"
+  ],
+  "export": [
+    "dışa aktarma",
+    "dosya olarak çıkarma"
+  ],
+  "format": [
+    "biçim",
+    "düzen"
+  ],
+  "revision": [
+    "gözden geçirme",
+    "yeniden düzenleme"
+  ],
+  "subtask": [
+    "alt görev",
+    "küçük iş adımı"
+  ],
+  "priority": [
+    "öncelik",
+    "önem sırası"
+  ],
+  "blocker": [
+    "engel",
+    "ilerlemeyi durduran sorun"
+  ],
+  "estimate": [
+    "tahmin",
+    "öngörülen süre"
+  ],
+  "resource": [
+    "kaynak",
+    "olanak"
+  ],
+  "stakeholder": [
+    "paydaş",
+    "ilgili taraf"
+  ],
+  "deliverable": [
+    "teslim çıktısı",
+    "sunulacak ürün"
+  ],
+  "proposal": [
+    "öneri",
+    "teklif metni"
+  ],
+  "objective": [
+    "amaç",
+    "hedef"
+  ],
+  "outcome": [
+    "sonuç",
+    "elde edilen çıktı"
+  ],
+  "impact": [
+    "etki",
+    "yansıma gücü"
+  ],
+  "evidence": [
+    "kanıt",
+    "dayanak"
+  ],
+  "survey": [
+    "anket",
+    "yoklama çalışması"
+  ],
+  "interview": [
+    "görüşme",
+    "mülakat"
+  ],
+  "observation": [
+    "gözlem",
+    "izleme sonucu"
+  ],
+  "variable": [
+    "değişken"
+  ],
+  "metric": [
+    "ölçüt",
+    "izleme değeri"
+  ],
+  "baseline": [
+    "başlangıç düzeyi",
+    "karşılaştırma temeli"
+  ],
+  "benchmarking": [
+    "kıyaslama",
+    "ölçüt karşılaştırması"
+  ],
+  "dashboard widget": [
+    "panel bileşeni",
+    "gösterge öğesi"
+  ],
+  "sort": [
+    "sıralama",
+    "dizme"
+  ],
+  "group": [
+    "gruplamak",
+    "kümelemek"
+  ],
+  "tag": [
+    "etiket",
+    "işaretleyici sözcük"
+  ],
+  "attachment": [
+    "ek",
+    "iliştirilmiş dosya"
+  ],
+  "collaboration": [
+    "iş birliği",
+    "ortak çalışma"
+  ],
+  "workspace": [
+    "çalışma alanı",
+    "ortak üretim alanı"
+  ],
+  "mention": [
+    "anma",
+    "etiketleyerek seslenme"
+  ],
+  "mute": [
+    "sessize alma",
+    "bildirimi kapatma"
+  ],
+  "subscribe": [
+    "abone olma",
+    "izlemeye alma"
+  ],
+  "unsubscribe": [
+    "abonelikten çıkma",
+    "izlemeyi bırakma"
+  ],
+  "livestream": [
+    "canlı yayın",
+    "eş zamanlı yayın"
+  ],
+  "course": [
+    "kurs",
+    "öğrenim dizisi"
+  ],
+  "module lesson": [
+    "ders birimi",
+    "öğrenme bölümü"
+  ],
+  "assessment": [
+    "değerlendirme",
+    "ölçme sonucu"
+  ],
+  "rubric": [
+    "dereceli puanlama anahtarı",
+    "ölçüt cetveli"
+  ],
+  "feedback loop": [
+    "geri bildirim döngüsü",
+    "dönüt çevrimi"
+  ],
+  "iteration": [
+    "yineleme",
+    "tekrarlı geliştirme"
+  ],
+  "experiment": [
+    "deney",
+    "deneme çalışması"
+  ],
+  "pilot": [
+    "ön deneme",
+    "sınırlı uygulama"
+  ],
+  "adoption": [
+    "benimseme",
+    "kullanıma alma"
+  ],
+  "sustainability": [
+    "sürdürülebilirlik",
+    "devamlılık sağlayabilme"
+  ],
+  "efficiency": [
+    "etkinlik",
+    "iş verimi"
+  ],
+  "effectiveness": [
+    "etkililik",
+    "amaca ulaşma gücü"
+  ],
+  "feasibility": [
+    "uygulanabilirlik",
+    "gerçekleştirilebilirlik"
+  ],
+  "portability": [
+    "taşınabilirlik",
+    "başka ortama aktarılabilirlik"
+  ],
+  "localization": [
+    "yerelleştirme",
+    "yerel kullanıma uyarlama"
+  ],
+  "internationalization": [
+    "uluslararasılaştırma",
+    "çok dile uyarlama hazırlığı"
+  ],
+  "terminology": [
+    "terim bilgisi",
+    "kavram sözlüğü"
+  ],
+  "glossary": [
+    "terimler dizini",
+    "kavram listesi"
+  ],
+  "style guide": [
+    "yazım kılavuzu",
+    "üslup rehberi"
+  ],
+  "tone": [
+    "üslup tonu",
+    "anlatım havası"
+  ],
+  "formal": [
+    "resmî",
+    "kurallı anlatımlı"
+  ],
+  "informal": [
+    "samimi",
+    "gündelik anlatımlı"
+  ],
+  "academic": [
+    "akademik",
+    "bilimsel anlatımlı"
+  ],
+  "plain language": [
+    "yalın dil",
+    "sade anlatım"
+  ],
+  "pretrained": [
+    "önceden eğitilmiş",
+    "hazır eğitilmiş"
+  ],
+  "checkpoint": [
+    "ara kayıt",
+    "model kaydı",
+    "denetim noktası"
+  ],
+  "batch": [
+    "yığın",
+    "toplu işlem grubu"
+  ],
+  "mini-batch": [
+    "küçük yığın",
+    "alt işlem grubu"
+  ],
+  "epoch": [
+    "eğitim turu",
+    "devre"
+  ],
+  "loss": [
+    "kayıp",
+    "hata değeri"
+  ],
+  "optimizer": [
+    "eniyileyici",
+    "iyileştirici algoritma"
+  ],
+  "learning rate": [
+    "öğrenme oranı",
+    "öğrenme hızı"
+  ],
+  "gradient": [
+    "türev yönü",
+    "gradyan"
+  ],
+  "gradient descent": [
+    "eğim inişi",
+    "türev tabanlı azaltma"
+  ],
+  "backpropagation": [
+    "geri yayılım",
+    "ters yayılım"
+  ],
+  "forward pass": [
+    "ileri geçiş",
+    "ileri hesaplama"
+  ],
+  "activation": [
+    "ilk etkin kullanım",
+    "değerin ilk kez yaşanması"
+  ],
+  "activation function": [
+    "etkinleştirme işlevi",
+    "aktivasyon fonksiyonu"
+  ],
+  "dropout": [
+    "rastgele devre dışı bırakma",
+    "seyreltme"
+  ],
+  "overfitting": [
+    "aşırı uyum",
+    "ezberleme eğilimi"
+  ],
+  "underfitting": [
+    "yetersiz uyum",
+    "eksik öğrenme"
+  ],
+  "generalization": [
+    "genelleme",
+    "genel geçer uyum"
+  ],
+  "regularization": [
+    "düzenlileştirme",
+    "aşırı uyumu azaltma"
+  ],
+  "feature engineering": [
+    "özellik mühendisliği",
+    "öznitelik tasarımı"
+  ],
+  "feature extraction": [
+    "özellik çıkarımı",
+    "öznitelik ayıklama"
+  ],
+  "feature selection": [
+    "özellik seçimi",
+    "öznitelik seçme"
+  ],
+  "preprocessing": [
+    "ön işleme",
+    "ön hazırlık işlemi"
+  ],
+  "postprocessing": [
+    "son işleme",
+    "çıktı sonrası düzenleme"
+  ],
+  "normalization": [
+    "normalleştirme",
+    "ölçek dengeleme"
+  ],
+  "standardization": [
+    "standartlaştırma",
+    "ölçünleştirme"
+  ],
+  "augmentation": [
+    "veri çoğaltma",
+    "zenginleştirme"
+  ],
+  "undersampling": [
+    "azaltılmış örnekleme",
+    "alt örnekleme"
+  ],
+  "oversampling": [
+    "artırılmış örnekleme",
+    "üst örnekleme"
+  ],
+  "imbalanced data": [
+    "dengesiz veri",
+    "oransız veri"
+  ],
+  "ground truth": [
+    "gerçek etiket",
+    "doğru referans"
+  ],
+  "hyperparameter": [
+    "üst parametre",
+    "ince ayar değişkeni"
+  ],
+  "tuning": [
+    "ince ayar",
+    "ayar iyileştirme"
+  ],
+  "grid search": [
+    "ızgara araması",
+    "taramalı parametre araması"
+  ],
+  "random search": [
+    "rastgele arama",
+    "rastlantısal parametre araması"
+  ],
+  "cross-validation": [
+    "çapraz doğrulama",
+    "katlamalı doğrulama"
+  ],
+  "validation set": [
+    "doğrulama kümesi",
+    "geçerleme kümesi"
+  ],
+  "test set": [
+    "test kümesi",
+    "sınama kümesi"
+  ],
+  "train set": [
+    "eğitim kümesi",
+    "öğretim kümesi"
+  ],
+  "holdout": [
+    "ayrılmış doğrulama bölümü",
+    "bekletilmiş örnek kümesi"
+  ],
+  "in-context learning": [
+    "bağlam içinde öğrenme",
+    "örnekten bağlamsal öğrenme"
+  ],
+  "zero-shot": [
+    "örneksiz",
+    "sıfır örnekli"
+  ],
+  "few-shot": [
+    "az örnekli",
+    "birkaç örnekli"
+  ],
+  "one-shot": [
+    "tek örnekli",
+    "bir örnekli"
+  ],
+  "similarity": [
+    "benzerlik",
+    "yakınlık"
+  ],
+  "semantic search": [
+    "anlamsal arama",
+    "mana tabanlı arama"
+  ],
+  "vector database": [
+    "vektör veritabanı",
+    "gömme veritabanı"
+  ],
+  "vector store": [
+    "vektör deposu",
+    "vektör saklama alanı"
+  ],
+  "indexing": [
+    "indeksleme",
+    "dizinleme"
+  ],
+  "retriever": [
+    "geri getirici",
+    "erişim modülü"
+  ],
+  "generator": [
+    "üretici",
+    "oluşturucu"
+  ],
+  "prompt engineering": [
+    "istem mühendisliği",
+    "komut tasarımı"
+  ],
+  "system prompt": [
+    "sistem istemi",
+    "sistem yönergesi"
+  ],
+  "user prompt": [
+    "kullanıcı istemi",
+    "kullanıcı yönergesi"
+  ],
+  "context window": [
+    "bağlam penceresi",
+    "işlenebilir bağlam aralığı"
+  ],
+  "temperature": [
+    "çeşitlilik ayarı",
+    "rastgelelik düzeyi"
+  ],
+  "top-k": [
+    "ilk-k seçimi",
+    "üst-k örnekleme"
+  ],
+  "top-p": [
+    "olasılık eşiği seçimi",
+    "üst-p örnekleme"
+  ],
+  "beam search": [
+    "ışın araması",
+    "çoklu yol araması"
+  ],
+  "token budget": [
+    "belirteç bütçesi",
+    "işlenebilir belirteç sınırı"
+  ],
+  "vision-language": [
+    "görsel-dil",
+    "görüntü ve dil tabanlı"
+  ],
+  "speech recognition": [
+    "konuşma tanıma",
+    "ses tanıma"
+  ],
+  "text-to-speech": [
+    "metinden konuşmaya",
+    "metin seslendirme"
+  ],
+  "speech-to-text": [
+    "konuşmadan metne",
+    "ses yazıya dönüştürme"
+  ],
+  "classification": [
+    "sınıflandırma",
+    "sınıf atama"
+  ],
+  "clustering": [
+    "kümeleme",
+    "benzerleri gruplama"
+  ],
+  "recommendation": [
+    "öneri",
+    "tavsiye"
+  ],
+  "forecasting": [
+    "öngörü",
+    "ileriye dönük tahmin"
+  ],
+  "time series": [
+    "zaman serisi",
+    "zamana bağlı veri dizisi"
+  ],
+  "anomaly detection": [
+    "aykırılık tespiti",
+    "anomali algılama"
+  ],
+  "outlier": [
+    "aykırı değer",
+    "sıradışı gözlem"
+  ],
+  "label smoothing": [
+    "etiket yumuşatma",
+    "sınıf hedefini yumuşatma"
+  ],
+  "confusion matrix": [
+    "karmaşıklık matrisi",
+    "sınıf karışım tablosu"
+  ],
+  "precision": [
+    "kesinlik",
+    "isabet oranı"
+  ],
+  "recall": [
+    "duyarlılık",
+    "yakalama oranı"
+  ],
+  "f1-score": [
+    "f1 puanı",
+    "denge başarım puanı"
+  ],
+  "accuracy": [
+    "doğruluk",
+    "başarı oranı"
+  ],
+  "roc curve": [
+    "roc eğrisi",
+    "doğru-yanlış oran eğrisi"
+  ],
+  "auc": [
+    "eğri altı alan",
+    "alan puanı"
+  ],
+  "quantization": [
+    "nicemleme",
+    "sayısal küçültme"
+  ],
+  "distillation": [
+    "damıtma",
+    "bilgi aktarımlı küçültme"
+  ],
+  "pruning": [
+    "budama",
+    "gereksiz bağ kesme"
+  ],
+  "adapter": [
+    "uyarlayıcı",
+    "ara bağlayıcı"
+  ],
+  "lora": [
+    "düşük dereceli uyarlama",
+    "az maliyetli ince ayar"
+  ],
+  "memory": [
+    "bellek",
+    "anımsama alanı"
+  ],
+  "context retention": [
+    "bağlamı koruma",
+    "önceki içeriği sürdürme"
+  ],
+  "retrieval-augmented generation": [
+    "geri getirme destekli üretim",
+    "erişimle zenginleştirilmiş üretim"
+  ],
+  "rag": [
+    "geri getirme destekli üretim",
+    "erişimle zenginleştirilmiş üretim"
+  ],
+  "entity extraction": [
+    "varlık çıkarımı",
+    "öğe ayıklama"
+  ],
+  "named entity recognition": [
+    "adlandırılmış varlık tanıma",
+    "özel ad çıkarımı"
+  ],
+  "part-of-speech tagging": [
+    "sözcük türü etiketleme",
+    "dil bilgisel tür işaretleme"
+  ],
+  "lemmatization": [
+    "kök biçime indirme",
+    "sözlük biçimine çevirme"
+  ],
+  "stemming": [
+    "kök bulma",
+    "gövdeleme"
+  ],
+  "corpus": [
+    "derlem",
+    "metin bütünü"
+  ],
+  "vocabulary": [
+    "söz varlığı",
+    "kelime dağarcığı"
+  ],
+  "stopword": [
+    "işlev sözcüğü",
+    "ayıklanan sık sözcük"
+  ],
+  "n-gram": [
+    "n-li sözcük dizisi",
+    "parça dizisi"
+  ],
+  "co-occurrence": [
+    "eş görülüm",
+    "birlikte geçme"
+  ],
+  "attention": [
+    "dikkat",
+    "odaklama"
+  ],
+  "self-attention": [
+    "öz dikkat",
+    "kendi bağlamına odaklanma"
+  ],
+  "transformer": [
+    "dönüştürücü ağ",
+    "transformer"
+  ],
+  "encoder": [
+    "kodlayıcı",
+    "dönüş sayacı"
+  ],
+  "decoder": [
+    "çözücü",
+    "çıktı oluşturucu"
+  ],
+  "hidden state": [
+    "gizli durum",
+    "ara temsil"
+  ],
+  "inference server": [
+    "çıkarım sunucusu",
+    "tahmin sunucusu"
+  ],
+  "serving": [
+    "hizmete sunma",
+    "çıkarım sağlama"
+  ],
+  "model card": [
+    "model kartı",
+    "model tanıtım belgesi"
+  ],
+  "data card": [
+    "veri kartı",
+    "veri tanıtım belgesi"
+  ],
+  "guardrail": [
+    "koruyucu sınır",
+    "güvenlik kuralı"
+  ],
+  "safety filter": [
+    "güvenlik süzgeci",
+    "zararlı içeriği ayıklama"
+  ],
+  "algorithm": [
+    "algoritma",
+    "işlem yöntemi"
+  ],
+  "architecture": [
+    "mimari",
+    "yapı düzeni"
+  ],
+  "design pattern": [
+    "tasarım kalıbı",
+    "tasarım deseni"
+  ],
+  "refactoring": [
+    "yeniden düzenleme",
+    "kod iyileştirme"
+  ],
+  "clean code": [
+    "temiz kod",
+    "okunabilir kod"
+  ],
+  "push": [
+    "gönderme",
+    "değişikliği depoya aktarma"
+  ],
+  "pull": [
+    "çekme",
+    "depodan alma"
+  ],
+  "clone": [
+    "kopya alma",
+    "depoyu çoğaltma"
+  ],
+  "fork": [
+    "çatallama",
+    "bağımsız kopya oluşturma"
+  ],
+  "stash": [
+    "geçici saklama",
+    "bekletme alanı"
+  ],
+  "diff": [
+    "fark",
+    "değişiklik karşılaştırması"
+  ],
+  "merge conflict": [
+    "birleştirme çakışması",
+    "değişiklik çelişkisi"
+  ],
+  "issue tracker": [
+    "sorun izleyici",
+    "kayıtlı sorun takibi"
+  ],
+  "release note": [
+    "sürüm notu",
+    "yayın özeti"
+  ],
+  "changelog": [
+    "değişiklik günlüğü",
+    "sürüm değişim kaydı"
+  ],
+  "version control": [
+    "sürüm denetimi",
+    "sürüm kontrolü"
+  ],
+  "semantic versioning": [
+    "anlamlı sürümleme",
+    "kurallı sürüm numaralama"
+  ],
+  "package manager": [
+    "paket yöneticisi",
+    "bağımlılık yöneticisi"
+  ],
+  "build": [
+    "derleme",
+    "oluşturma çıktısı"
+  ],
+  "build system": [
+    "derleme sistemi",
+    "oluşturma düzeni"
+  ],
+  "compiler": [
+    "derleyici",
+    "kod çevirici"
+  ],
+  "interpreter": [
+    "yorumlayıcı",
+    "satır satır çalıştırıcı"
+  ],
+  "runtime": [
+    "çalışma zamanı",
+    "işletim anı"
+  ],
+  "framework update": [
+    "çatı güncellemesi",
+    "altyapı yenilemesi"
+  ],
+  "boilerplate": [
+    "tekrarlayan iskelet kod",
+    "hazır başlangıç kodu"
+  ],
+  "snippet": [
+    "kod parçası",
+    "kısa örnek"
+  ],
+  "route": [
+    "rota",
+    "erişim yolu"
+  ],
+  "middleware": [
+    "ara katman",
+    "aracı yazılım katmanı"
+  ],
+  "callback": [
+    "geri çağırım",
+    "dönüş işlevi"
+  ],
+  "handler": [
+    "işleyici",
+    "olay yöneticisi"
+  ],
+  "session store": [
+    "oturum deposu",
+    "oturum saklama alanı"
+  ],
+  "cookie": [
+    "çerez",
+    "tarayıcı saklama bilgisi"
+  ],
+  "csrf": [
+    "istek sahteciliği koruması",
+    "çapraz site istek koruması"
+  ],
+  "cors": [
+    "çapraz kaynak erişim izni",
+    "kökenler arası erişim kuralı"
+  ],
+  "rest api": [
+    "rest arayüzü",
+    "kaynak tabanlı servis arayüzü"
+  ],
+  "graphql": [
+    "alan seçmeli veri arayüzü",
+    "sorgu tabanlı servis arayüzü"
+  ],
+  "rpc": [
+    "uzak yordam çağrısı",
+    "uzak işlev çağrısı"
+  ],
+  "sdk": [
+    "geliştirme kiti",
+    "yazılım geliştirme araç takımı"
+  ],
+  "cli": [
+    "komut satırı arayüzü",
+    "uçbirim arayüzü"
+  ],
+  "gui": [
+    "grafiksel arayüz",
+    "görsel kullanıcı arayüzü"
+  ],
+  "responsive design": [
+    "uyumlu tasarım",
+    "ekrana göre uyarlanan tasarım"
+  ],
+  "viewport": [
+    "görünüm alanı",
+    "ekran penceresi"
+  ],
+  "breakpoint": [
+    "kesme noktası",
+    "ekran kırılım noktası"
+  ],
+  "stylesheet": [
+    "biçem dosyası",
+    "stil sayfası"
+  ],
+  "dark mode": [
+    "koyu kip",
+    "karanlık görünüm"
+  ],
+  "light mode": [
+    "açık kip",
+    "aydınlık görünüm"
+  ],
+  "keyboard navigation": [
+    "klavye gezintisi",
+    "klavye ile dolaşım"
+  ],
+  "screen reader": [
+    "ekran okuyucu",
+    "sesli okuma yardımcısı"
+  ],
+  "translation key": [
+    "çeviri anahtarı",
+    "dil eşleme anahtarı"
+  ],
+  "graceful degradation": [
+    "uyumlu gerileme",
+    "özellik azalsa da çalışmayı sürdürme"
+  ],
+  "progressive enhancement": [
+    "aşamalı iyileştirme",
+    "artan özellikli geliştirme"
+  ],
+  "pagination": [
+    "sayfalama",
+    "parçalı listeleme"
+  ],
+  "infinite scroll": [
+    "sonsuz kaydırma",
+    "uçsuz liste akışı"
+  ],
+  "lazy loading": [
+    "tembel yükleme",
+    "gerektikçe yükleme"
+  ],
+  "eager loading": [
+    "önceden yükleme",
+    "hemen yükleme"
+  ],
+  "caching": [
+    "önbellekleme",
+    "geçici saklama"
+  ],
+  "debounce": [
+    "sarsıntı önleme",
+    "hızlı tekrarları bastırma"
+  ],
+  "throttle": [
+    "sınırlı tetikleme",
+    "aralıklı çalıştırma"
+  ],
+  "state management": [
+    "durum yönetimi",
+    "uygulama durumu denetimi"
+  ],
+  "store": [
+    "durum deposu",
+    "veri saklama alanı"
+  ],
+  "event bus": [
+    "olay hattı",
+    "olay taşıma kanalı"
+  ],
+  "observer": [
+    "gözlemci",
+    "izleyici bileşen"
+  ],
+  "singleton": [
+    "tek örnek",
+    "biricik nesne kalıbı"
+  ],
+  "factory": [
+    "üretici",
+    "nesne oluşturucu"
+  ],
+  "adapter pattern": [
+    "uyarlayıcı kalıbı",
+    "ara bağlayıcı deseni"
+  ],
+  "repository pattern": [
+    "depo kalıbı",
+    "veri erişim deseni"
+  ],
+  "service layer": [
+    "hizmet katmanı",
+    "iş mantığı katmanı"
+  ],
+  "domain model": [
+    "alan modeli",
+    "iş alanı modeli"
+  ],
+  "monolith": [
+    "tek parça yapı",
+    "monolitik sistem"
+  ],
+  "microservice": [
+    "mikro hizmet",
+    "küçük bağımsız servis"
+  ],
+  "serverless": [
+    "sunucusuz",
+    "sunucu yönetimsiz çalışma"
+  ],
+  "virtual environment": [
+    "sanal ortam",
+    "yalıtılmış paket ortamı"
+  ],
+  "environment variable": [
+    "ortam değişkeni",
+    "çalışma ayarı değişkeni"
+  ],
+  "configuration file": [
+    "yapılandırma dosyası",
+    "ayar dosyası"
+  ],
+  "secret": [
+    "gizli anahtar",
+    "saklı bilgi"
+  ],
+  "credential": [
+    "kimlik bilgisi",
+    "erişim bilgisi"
+  ],
+  "seed data": [
+    "başlangıç verisi",
+    "ilk doldurma verisi"
+  ],
+  "replica": [
+    "kopya düğüm",
+    "eş veri kopyası"
+  ],
+  "transaction": [
+    "işlem",
+    "bütünlüklü veri adımı"
+  ],
+  "atomic": [
+    "bölünemez",
+    "tek parça işlem"
+  ],
+  "consistency": [
+    "tutarlılık",
+    "veri uyumu"
+  ],
+  "durability": [
+    "kalıcılık",
+    "işlem dayanıklılığı"
+  ],
+  "server": [
+    "sunucu",
+    "hizmet sağlayıcı bilgisayar"
+  ],
+  "client": [
+    "istemci",
+    "hizmet alan uç"
+  ],
+  "host": [
+    "ana sistem",
+    "barındırıcı"
+  ],
+  "hostname": [
+    "makine adı",
+    "ana sistem adı"
+  ],
+  "port": [
+    "bağlantı kapısı",
+    "erişim yuvası"
+  ],
+  "socket": [
+    "bağlantı yuvası",
+    "ağ ucu"
+  ],
+  "protocol": [
+    "iletişim kuralı",
+    "protokol"
+  ],
+  "http": [
+    "ağ aktarım kuralı",
+    "web iletişim protokolü"
+  ],
+  "https": [
+    "güvenli ağ aktarım kuralı",
+    "şifreli web iletişimi"
+  ],
+  "tcp": [
+    "iletim denetim kuralı",
+    "bağlantılı aktarım protokolü"
+  ],
+  "udp": [
+    "bağlantısız veri aktarımı",
+    "hızlı aktarım protokolü"
+  ],
+  "ip address": [
+    "ip adresi",
+    "ağ adresi"
+  ],
+  "public ip": [
+    "genel ağ adresi",
+    "dış ip"
+  ],
+  "private ip": [
+    "özel ağ adresi",
+    "iç ip"
+  ],
+  "subnet": [
+    "alt ağ",
+    "bölünmüş ağ dilimi"
+  ],
+  "dns": [
+    "alan adı çözümleme",
+    "ad çözümleyici sistem"
+  ],
+  "domain name system": [
+    "alan adı sistemi",
+    "ad çözümleme düzeni"
+  ],
+  "reverse proxy": [
+    "ters vekil",
+    "ters yönlü ara sunucu"
+  ],
+  "cdn": [
+    "içerik dağıtım ağı",
+    "yakın dağıtım ağı"
+  ],
+  "edge": [
+    "uç nokta katmanı",
+    "yakın kenar ağı"
+  ],
+  "region": [
+    "bölge",
+    "hizmet bölgesi"
+  ],
+  "zone": [
+    "alan",
+    "erişim bölgesi"
+  ],
+  "autoscaling": [
+    "kendiliğinden ölçekleme",
+    "otomatik büyütme küçültme"
+  ],
+  "uptime": [
+    "çalışır kalma süresi",
+    "hizmette kalma oranı"
+  ],
+  "downtime": [
+    "kesinti süresi",
+    "hizmet dışı kalma"
+  ],
+  "high availability": [
+    "yüksek erişilebilirlik",
+    "kesintiye dayanıklı hizmet"
+  ],
+  "disaster recovery": [
+    "afet kurtarma",
+    "felaket sonrası geri dönüş"
+  ],
+  "alerting": [
+    "uyarı üretme",
+    "bildirim verme"
+  ],
+  "postmortem": [
+    "olay sonrası çözümleme",
+    "kök neden değerlendirmesi"
+  ],
+  "root cause": [
+    "kök neden",
+    "asıl sebep"
+  ],
+  "runbook": [
+    "uygulama yönergesi",
+    "işletim adımları kılavuzu"
+  ],
+  "playbook": [
+    "uygulama planı",
+    "hazır müdahale kılavuzu"
+  ],
+  "infrastructure": [
+    "altyapı",
+    "temel sistem yapısı"
+  ],
+  "provisioning": [
+    "hazırlayıp sunma",
+    "kaynak oluşturma"
+  ],
+  "instance": [
+    "örnek makine",
+    "çalışan örnek"
+  ],
+  "vm": [
+    "sanal makine",
+    "sanal bilgisayar"
+  ],
+  "ami": [
+    "hazır makine kalıbı",
+    "sunucu imajı"
+  ],
+  "object storage": [
+    "nesne depolama",
+    "parça tabanlı depolama"
+  ],
+  "block storage": [
+    "blok depolama",
+    "disk benzeri depolama"
+  ],
+  "file storage": [
+    "dosya depolama",
+    "dosya tabanlı saklama"
+  ],
+  "bucket": [
+    "depolama kovası",
+    "nesne kabı"
+  ],
+  "cloud function": [
+    "bulut işlevi",
+    "olayla çalışan sunucusuz işlev"
+  ],
+  "message queue": [
+    "ileti kuyruğu",
+    "mesaj sırası"
+  ],
+  "event stream": [
+    "olay akışı",
+    "sürekli olay verisi"
+  ],
+  "pub-sub": [
+    "yayınla-abone ol",
+    "yayım-abonelik düzeni"
+  ],
+  "service mesh": [
+    "hizmet ağı",
+    "servisler arası iletişim ağı"
+  ],
+  "sidecar": [
+    "yan bileşen",
+    "yardımcı yan süreç"
+  ],
+  "api gateway": [
+    "api geçidi",
+    "servis giriş kapısı"
+  ],
+  "ingress": [
+    "giriş trafiği",
+    "içeri yönelen akış"
+  ],
+  "egress": [
+    "çıkış trafiği",
+    "dışarı yönelen akış"
+  ],
+  "packet": [
+    "paket",
+    "ağ veri birimi"
+  ],
+  "packet loss": [
+    "paket kaybı",
+    "iletim kaybı"
+  ],
+  "jitter": [
+    "dalgalanma gecikmesi",
+    "zaman oynaklığı"
+  ],
+  "nat": [
+    "ağ adres çevirisi",
+    "adres dönüştürme"
+  ],
+  "vpn": [
+    "sanal özel ağ",
+    "güvenli uzak ağ"
+  ],
+  "waf": [
+    "web uygulama güvenlik duvarı",
+    "web koruma süzgeci"
+  ],
+  "ingress controller": [
+    "giriş yöneticisi",
+    "içeri trafik denetleyici"
+  ],
+  "tls": [
+    "taşıma katmanı güvenliği",
+    "şifreli aktarım güvenliği"
+  ],
+  "ssl": [
+    "güvenli soket katmanı",
+    "şifreli bağlantı kuralı"
+  ],
+  "ssh": [
+    "güvenli kabuk",
+    "uzak güvenli erişim"
+  ],
+  "sftp": [
+    "güvenli dosya aktarımı",
+    "şifreli dosya taşıma"
+  ],
+  "ftp": [
+    "dosya aktarım kuralı",
+    "ağ üzerinden dosya taşıma"
+  ],
+  "latency budget": [
+    "gecikme bütçesi",
+    "yanıt süresi payı"
+  ],
+  "rate limit": [
+    "istek sınırı",
+    "hız limiti"
+  ],
+  "quota": [
+    "kota",
+    "kullanım sınırı"
+  ],
+  "multi-tenant": [
+    "çok kiracılı",
+    "aynı altyapıyı paylaşan"
+  ],
+  "single-tenant": [
+    "tek kiracılı",
+    "yalnız kullanım için ayrılmış"
+  ],
+  "cloud native": [
+    "bulut yerel",
+    "buluta özgü tasarlanmış"
+  ],
+  "managed service": [
+    "yönetilen hizmet",
+    "işletimi dışarıdan sağlanan hizmet"
+  ],
+  "self-hosted": [
+    "kendi barındırmalı",
+    "öz sunuculu"
+  ],
+  "hybrid cloud": [
+    "karma bulut",
+    "melez bulut"
+  ],
+  "private cloud": [
+    "özel bulut",
+    "kuruma özel bulut"
+  ],
+  "public cloud": [
+    "genel bulut",
+    "paylaşımlı bulut hizmeti"
+  ],
+  "multi-cloud": [
+    "çoklu bulut",
+    "birden çok bulut sağlayıcısı kullanımı"
+  ],
+  "container registry": [
+    "kapsayıcı deposu",
+    "imaj kayıt yeri"
+  ],
+  "artifact registry": [
+    "çıktı deposu",
+    "yapıt saklama yeri"
+  ],
+  "immutable": [
+    "değiştirilemez",
+    "sonradan düzenlenemez"
+  ],
+  "blue-green deployment": [
+    "mavi-yeşil yayınlama",
+    "çift ortamlı sürüm geçişi"
+  ],
+  "canary release": [
+    "kademeli sürüm",
+    "küçük gruba deneme yayını"
+  ],
+  "rolling update": [
+    "aşamalı güncelleme",
+    "parça parça sürüm geçişi"
+  ],
+  "rollback strategy": [
+    "geri alma stratejisi",
+    "eski sürüme dönüş planı"
+  ],
+  "health check": [
+    "sağlık denetimi",
+    "çalışırlık kontrolü"
+  ],
+  "liveness probe": [
+    "canlılık yoklaması",
+    "süreç yaşama denetimi"
+  ],
+  "readiness probe": [
+    "hazırlık yoklaması",
+    "istek almaya uygunluk denetimi"
+  ],
+  "resource limit": [
+    "kaynak sınırı",
+    "kullanım üst limiti"
+  ],
+  "resource request": [
+    "kaynak isteği",
+    "ayrılacak asgari kaynak"
+  ],
+  "cpu throttling": [
+    "işlemci kısma",
+    "cpu kullanım sınırlaması"
+  ],
+  "memory leak": [
+    "bellek sızıntısı",
+    "kullanılan belleğin bırakılmaması"
+  ],
+  "connection pool": [
+    "bağlantı havuzu",
+    "yeniden kullanılan bağlantı grubu"
+  ],
+  "circuit breaker": [
+    "devre kesici",
+    "arızada çağrıyı durduran koruma"
+  ],
+  "retry policy": [
+    "yeniden deneme kuralı",
+    "tekrar çağrı politikası"
+  ],
+  "cybersecurity": [
+    "siber güvenlik",
+    "sayısal güvenlik"
+  ],
+  "patch management": [
+    "yama yönetimi",
+    "güncelleme düzeltme takibi"
+  ],
+  "spyware": [
+    "casus yazılım",
+    "izleyici zararlı yazılım"
+  ],
+  "adware": [
+    "reklam yazılımı",
+    "istenmeyen reklam yazılımı"
+  ],
+  "trojan": [
+    "truva atı",
+    "gizlenmiş zararlı yazılım"
+  ],
+  "worm": [
+    "solucan",
+    "kendini yayan zararlı yazılım"
+  ],
+  "virus": [
+    "virüs",
+    "bulaşan zararlı yazılım"
+  ],
+  "botnet": [
+    "ele geçirilmiş cihaz ağı",
+    "bot ağı"
+  ],
+  "phishing email": [
+    "oltalama e-postası",
+    "aldatıcı e-posta"
+  ],
+  "spear phishing": [
+    "hedefli oltalama",
+    "kişiye özel aldatıcı saldırı"
+  ],
+  "smishing": [
+    "sms oltalaması",
+    "ileti ile aldatma"
+  ],
+  "vishing": [
+    "sesli oltalama",
+    "telefonla aldatma"
+  ],
+  "impersonation": [
+    "kimliğe bürünme",
+    "başkasını taklit etme"
+  ],
+  "brute force": [
+    "kaba kuvvet denemesi",
+    "yoğun parola denemesi"
+  ],
+  "credential stuffing": [
+    "ele geçmiş bilgilerle giriş denemesi",
+    "kimlik bilgisi doldurma saldırısı"
+  ],
+  "password spraying": [
+    "yaygın parola denemesi",
+    "tek parolayı birçok hesaba deneme"
+  ],
+  "dictionary attack": [
+    "sözlük saldırısı",
+    "kelime listesiyle parola denemesi"
+  ],
+  "social engineering": [
+    "sosyal mühendislik",
+    "insan kandırmaya dayalı saldırı"
+  ],
+  "mfa": [
+    "çok aşamalı doğrulama",
+    "çok etkenli kimlik doğrulama"
+  ],
+  "2fa": [
+    "iki aşamalı doğrulama",
+    "iki etkenli kimlik doğrulama"
+  ],
+  "biometrics": [
+    "biyometrik doğrulama",
+    "bedensel kimlik denetimi"
+  ],
+  "passkey": [
+    "geçiş anahtarı",
+    "parolasız giriş anahtarı"
+  ],
+  "password manager": [
+    "parola yöneticisi",
+    "şifre saklayıcı"
+  ],
+  "hashing": [
+    "özetleme",
+    "tek yönlü kodlama"
+  ],
+  "salting": [
+    "rastgele tuz ekleme",
+    "özet güçlendirme"
+  ],
+  "cipher": [
+    "şifreleme yöntemi",
+    "kriptolama düzeni"
+  ],
+  "key rotation": [
+    "anahtar yenileme",
+    "şifreleme anahtarını değiştirme"
+  ],
+  "token expiration": [
+    "jeton süresi dolması",
+    "erişim anahtarının geçersizleşmesi"
+  ],
+  "access control": [
+    "erişim denetimi",
+    "kimin neye ulaşacağını belirleme"
+  ],
+  "least privilege": [
+    "en az yetki",
+    "asgari yetki ilkesi"
+  ],
+  "role-based access control": [
+    "role dayalı erişim denetimi",
+    "göreve göre yetkilendirme"
+  ],
+  "attribute-based access control": [
+    "özelliğe dayalı erişim denetimi",
+    "nitelik tabanlı yetki"
+  ],
+  "audit log": [
+    "denetim günlüğü",
+    "iz kayıtları"
+  ],
+  "tamper-proof": [
+    "kurcalamaya dayanıklı",
+    "değiştirildiği anlaşılır"
+  ],
+  "gdpr": [
+    "genel veri koruma düzeni",
+    "kişisel veri koruma tüzüğü"
+  ],
+  "kvkk": [
+    "kişisel verilerin korunması kanunu",
+    "kişisel veri koruma yasası"
+  ],
+  "data retention": [
+    "veri saklama süresi",
+    "veri tutma politikası"
+  ],
+  "data minimization": [
+    "veri asgariye indirme",
+    "gerektiği kadar veri tutma"
+  ],
+  "redaction": [
+    "karartma",
+    "gizli bölümü kapatma"
+  ],
+  "masking": [
+    "maskeleme",
+    "veriyi kısmen gizleme"
+  ],
+  "privacy policy": [
+    "gizlilik politikası",
+    "mahremiyet bildirimi"
+  ],
+  "terms of service": [
+    "hizmet koşulları",
+    "kullanım şartları"
+  ],
+  "opt-in": [
+    "açık katılım onayı",
+    "etkin onay verme"
+  ],
+  "opt-out": [
+    "çıkış tercihi",
+    "reddetme seçeneği"
+  ],
+  "session hijacking": [
+    "oturum ele geçirme",
+    "açık oturumu çalma"
+  ],
+  "csrf token": [
+    "istek sahteciliği önleme jetonu",
+    "çapraz istek koruma anahtarı"
+  ],
+  "captcha": [
+    "insan doğrulama sınaması",
+    "robot ayırıcı doğrulama"
+  ],
+  "content security policy": [
+    "içerik güvenlik politikası",
+    "sayfa kaynak kuralı"
+  ],
+  "xss": [
+    "sayfa içi betik saldırısı",
+    "çapraz betik çalıştırma"
+  ],
+  "sql injection": [
+    "sql ekleme saldırısı",
+    "sorguya zararlı ek yapıştırma"
+  ],
+  "command injection": [
+    "komut ekleme saldırısı",
+    "zararlı komut yerleştirme"
+  ],
+  "directory traversal": [
+    "dizin dolaşma saldırısı",
+    "klasör sınırını aşma"
+  ],
+  "denial of service": [
+    "hizmet engelleme",
+    "sistemi yanıt veremez hâle getirme"
+  ],
+  "ddos": [
+    "dağıtık hizmet engelleme",
+    "çok kaynaktan yoğun istek saldırısı"
+  ],
+  "threat model": [
+    "tehdit modeli",
+    "risk senaryosu haritası"
+  ],
+  "attack surface": [
+    "saldırı yüzeyi",
+    "açıkta kalan erişim alanı"
+  ],
+  "penetration test": [
+    "sızma testi",
+    "güvenlik dayanıklılık sınaması"
+  ],
+  "vulnerability scan": [
+    "açık taraması",
+    "zafiyet yoklaması"
+  ],
+  "security posture": [
+    "güvenlik duruşu",
+    "korunma düzeyi"
+  ],
+  "incident response": [
+    "olay müdahalesi",
+    "güvenlik olayına yanıt"
+  ],
+  "forensics": [
+    "adli inceleme",
+    "olay sonrası delil çözümleme"
+  ],
+  "data breach": [
+    "veri ihlali",
+    "yetkisiz veri sızması"
+  ],
+  "product": [
+    "ürün",
+    "sunulan çözüm"
+  ],
+  "product market fit": [
+    "ürün-pazar uyumu",
+    "ürünün hedef kitleye oturması"
+  ],
+  "value proposition": [
+    "değer önerisi",
+    "sunulan fayda"
+  ],
+  "target audience": [
+    "hedef kitle",
+    "hedef kullanıcı topluluğu"
+  ],
+  "customer journey": [
+    "müşteri yolculuğu",
+    "kullanıcı deneyim akışı"
+  ],
+  "pain point": [
+    "sorun noktası",
+    "zorlayıcı kullanıcı ihtiyacı"
+  ],
+  "use case": [
+    "kullanım senaryosu",
+    "örnek kullanım durumu"
+  ],
+  "user story": [
+    "kullanıcı hikâyesi",
+    "ihtiyaç cümlesi"
+  ],
+  "acceptance criteria": [
+    "kabul ölçütleri",
+    "tamamlanma koşulları"
+  ],
+  "scrum": [
+    "çevik takım yöntemi",
+    "kısa döngülü ekip çalışması"
+  ],
+  "kanban": [
+    "akış panosu yöntemi",
+    "iş akışı kart düzeni"
+  ],
+  "standup": [
+    "günlük kısa toplantı",
+    "ayakta durum paylaşımı"
+  ],
+  "retrospective": [
+    "geriye dönük değerlendirme",
+    "dönem sonu gözden geçirme"
+  ],
+  "planning": [
+    "planlama",
+    "ön hazırlık düzeni"
+  ],
+  "grooming": [
+    "iş listesini düzenleme",
+    "öncelik bakım toplantısı"
+  ],
+  "epic": [
+    "büyük iş paketi",
+    "ana geliştirme başlığı"
+  ],
+  "severity": [
+    "ciddiyet düzeyi",
+    "etki ağırlığı"
+  ],
+  "owner": [
+    "sorumlu kişi",
+    "iş sahibi"
+  ],
+  "assignee": [
+    "atanan kişi",
+    "görevli"
+  ],
+  "velocity": [
+    "çalışma hızı",
+    "tamamlanan iş miktarı"
+  ],
+  "burn-down chart": [
+    "kalan iş grafiği",
+    "iş azalış çizelgesi"
+  ],
+  "okr": [
+    "amaç ve anahtar sonuçlar",
+    "hedef ve ölçülebilir çıktılar"
+  ],
+  "kpi": [
+    "temel başarı göstergesi",
+    "ana ölçüt"
+  ],
+  "north star metric": [
+    "ana yön ölçütü",
+    "temel büyüme göstergesi"
+  ],
+  "churn": [
+    "kaybetme oranı",
+    "ayrılan kullanıcı oranı"
+  ],
+  "lead": [
+    "aday müşteri",
+    "ilgi gösteren kişi"
+  ],
+  "prospect": [
+    "potansiyel müşteri",
+    "olası alıcı"
+  ],
+  "qualified lead": [
+    "nitelikli aday",
+    "satışa uygun aday müşteri"
+  ],
+  "engaged user": [
+    "etkileşimli kullanıcı",
+    "aktif katılan kullanıcı"
+  ],
+  "power user": [
+    "yoğun kullanıcı",
+    "ileri düzey kullanıcı"
+  ],
+  "monetization": [
+    "gelire dönüştürme",
+    "kazanç sağlama"
+  ],
+  "freemium": [
+    "ücretsiz artı ücretli model",
+    "temel kullanım ücretsiz modeli"
+  ],
+  "pricing": [
+    "fiyatlandırma",
+    "ücret belirleme"
+  ],
+  "tier": [
+    "paket düzeyi",
+    "katmanlı plan"
+  ],
+  "discount": [
+    "indirim",
+    "fiyat düşürme"
+  ],
+  "promotion": [
+    "tanıtım kampanyası",
+    "özendirme çalışması"
+  ],
+  "brand awareness": [
+    "marka bilinirliği",
+    "tanınırlık düzeyi"
+  ],
+  "messaging": [
+    "ileti dili",
+    "marka anlatım biçimi"
+  ],
+  "copywriting": [
+    "tanıtım metni yazımı",
+    "ikna edici metin yazarlığı"
+  ],
+  "headline": [
+    "başlık",
+    "öne çıkan yazı"
+  ],
+  "cta": [
+    "eylem çağrısı",
+    "harekete geçirici ifade"
+  ],
+  "landing page": [
+    "karşılama sayfası",
+    "hedef sayfa"
+  ],
+  "lead magnet": [
+    "ilgi çekici ücretsiz içerik",
+    "aday müşteri toplama içeriği"
+  ],
+  "newsletter": [
+    "bülten",
+    "düzenli e-posta yayını"
+  ],
+  "personalization": [
+    "kişiselleştirme",
+    "kişiye özel uyarlama"
+  ],
+  "ab test": [
+    "a/b testi",
+    "iki seçenekli karşılaştırma"
+  ],
+  "multivariate test": [
+    "çok değişkenli test",
+    "birden çok unsurun karşılaştırılması"
+  ],
+  "cohort": [
+    "dönem grubu",
+    "ortak özellikli kullanıcı kümesi"
+  ],
+  "growth": [
+    "büyüme",
+    "gelişim artışı"
+  ],
+  "growth loop": [
+    "büyüme döngüsü",
+    "kendini besleyen artış düzeni"
+  ],
+  "referral": [
+    "yönlendirme",
+    "kullanıcı tavsiyesiyle kazanım"
+  ],
+  "virality": [
+    "yayılabilirlik",
+    "kendiliğinden yayılma gücü"
+  ],
+  "network effect": [
+    "ağ etkisi",
+    "kullanıcı arttıkça değer artışı"
+  ],
+  "roadshow": [
+    "tanıtım turu",
+    "farklı yerlerde sunum dizisi"
+  ],
+  "pitch deck": [
+    "sunum dosyası",
+    "yatırımcı anlatım destesi"
+  ],
+  "elevator pitch": [
+    "kısa tanıtım konuşması",
+    "öz tanıtım metni"
+  ],
+  "go-to-market": [
+    "pazara çıkış planı",
+    "ürünü kullanıcıyla buluşturma planı"
+  ],
+  "benchmark": [
+    "kıyas ölçütü",
+    "karşılaştırma temeli"
+  ],
+  "competitive analysis": [
+    "rakip çözümleme",
+    "rekabet incelemesi"
+  ],
+  "market research": [
+    "pazar araştırması",
+    "hedef alan incelemesi"
+  ],
+  "nps": [
+    "tavsiye etme puanı",
+    "net öneri skoru"
+  ],
+  "csat": [
+    "memnuniyet puanı",
+    "müşteri memnuniyeti skoru"
+  ],
+  "sla": [
+    "hizmet düzeyi anlaşması",
+    "beklenen hizmet taahhüdü"
+  ],
+  "support ticket": [
+    "destek kaydı",
+    "yardım talep bileti"
+  ],
+  "resolution": [
+    "çözünürlük",
+    "görüntü ayrıntı düzeyi"
+  ],
+  "escalation": [
+    "üst düzeye taşıma",
+    "daha yetkili ekibe iletme"
+  ],
+  "knowledge base": [
+    "bilgi tabanı",
+    "yardım içerikleri deposu"
+  ],
+  "faq": [
+    "sık sorulan sorular",
+    "yaygın sorular bölümü"
+  ],
+  "documentation": [
+    "belgelendirme",
+    "dokümantasyon"
+  ],
+  "shorts": [
+    "kısa videolar",
+    "kısa içerikler"
+  ],
+  "streamer": [
+    "yayıncı",
+    "canlı içerik üreticisi"
+  ],
+  "content creator": [
+    "içerik üreticisi",
+    "dijital içerik hazırlayıcısı"
+  ],
+  "micro influencer": [
+    "küçük ölçekli etki üreticisi",
+    "dar ama ilgili kitleye sahip üretici"
+  ],
+  "ugc": [
+    "kullanıcı üretimi içerik",
+    "kullanıcı kaynaklı içerik"
+  ],
+  "engagement rate": [
+    "etkileşim oranı",
+    "katılım yüzdesi"
+  ],
+  "click-through rate": [
+    "tıklama oranı",
+    "görüntülemeye göre tıklama yüzdesi"
+  ],
+  "open rate": [
+    "açılma oranı",
+    "ileti görüntüleme yüzdesi"
+  ],
+  "watch time": [
+    "izlenme süresi",
+    "toplam izleme zamanı"
+  ],
+  "retention rate": [
+    "izleyici tutma oranı",
+    "izlemede kalma yüzdesi"
+  ],
+  "cover image": [
+    "kapak görseli",
+    "üst görsel"
+  ],
+  "bio": [
+    "profil açıklaması",
+    "kısa tanıtım metni"
+  ],
+  "hashtag": [
+    "etiket sözcüğü",
+    "konu işareti"
+  ],
+  "trending": [
+    "gündemde olan",
+    "öne çıkan"
+  ],
+  "viral": [
+    "hızla yayılan",
+    "çok paylaşılan"
+  ],
+  "organic reach": [
+    "doğal erişim",
+    "reklamsız erişim"
+  ],
+  "paid reach": [
+    "ücretli erişim",
+    "reklamla erişim"
+  ],
+  "boost": [
+    "öne çıkarma",
+    "erişimi artırma"
+  ],
+  "ad creative": [
+    "reklam görseli",
+    "reklam içeriği"
+  ],
+  "hook": [
+    "dikkat çekici başlangıç",
+    "yakalama cümlesi"
+  ],
+  "voiceover": [
+    "seslendirme",
+    "arka plan anlatımı"
+  ],
+  "b-roll": [
+    "destek görüntüsü",
+    "ek sahne görüntüsü"
+  ],
+  "cut": [
+    "kes",
+    "taşıma için çıkar"
+  ],
+  "transition": [
+    "geçiş",
+    "sahne değişim efekti"
+  ],
+  "subtitle": [
+    "altyazı",
+    "ekranda metin"
+  ],
+  "save": [
+    "kaydetme",
+    "sonra bakmak için saklama"
+  ],
+  "follow": [
+    "takip etme",
+    "izlemeye alma"
+  ],
+  "follower": [
+    "takipçi",
+    "izleyici kullanıcı"
+  ],
+  "following": [
+    "takip edilenler",
+    "izlenen hesaplar"
+  ],
+  "community": [
+    "topluluk",
+    "ilgi çevresi"
+  ],
+  "community guidelines": [
+    "topluluk kuralları",
+    "paylaşım ilkeleri"
+  ],
+  "algorithm feed": [
+    "algoritmik akış",
+    "kişiye göre sıralanan içerik akışı"
+  ],
+  "for you page": [
+    "sana özel sayfa",
+    "kişiye önerilen akış"
+  ],
+  "explore page": [
+    "keşfet sayfası",
+    "önerilen içerikler bölümü"
+  ],
+  "collab": [
+    "ortak içerik",
+    "iş birliği paylaşımı"
+  ],
+  "sponsorship": [
+    "sponsorluk",
+    "destekli tanıtım anlaşması"
+  ],
+  "brand deal": [
+    "marka iş birliği",
+    "tanıtım anlaşması"
+  ],
+  "affiliate link": [
+    "ortaklık bağlantısı",
+    "satıştan pay veren bağlantı"
+  ],
+  "conversion pixel": [
+    "dönüşüm izleme pikseli",
+    "reklam ölçüm kodu"
+  ],
+  "social proof": [
+    "toplumsal kanıt",
+    "başkalarının onayıyla güven oluşturma"
+  ],
+  "curriculum": [
+    "öğretim programı",
+    "müfredat"
+  ],
+  "syllabus": [
+    "ders içeriği planı",
+    "izlence"
+  ],
+  "learning outcome": [
+    "öğrenme çıktısı",
+    "kazanım"
+  ],
+  "formative assessment": [
+    "süreç değerlendirmesi",
+    "öğrenme sırasında ölçme"
+  ],
+  "summative assessment": [
+    "sonuç değerlendirmesi",
+    "dönem sonu ölçme"
+  ],
+  "quiz": [
+    "kısa sınav",
+    "küçük yoklama"
+  ],
+  "exam": [
+    "sınav",
+    "ölçme uygulaması"
+  ],
+  "assignment": [
+    "ödev",
+    "verilen çalışma"
+  ],
+  "worksheet": [
+    "çalışma kâğıdı",
+    "etkinlik sayfası"
+  ],
+  "module": [
+    "öğrenme birimi",
+    "ders bölümü"
+  ],
+  "lesson plan": [
+    "ders planı",
+    "öğretim akış planı"
+  ],
+  "instruction": [
+    "öğretim",
+    "yönerge verme"
+  ],
+  "scaffolding": [
+    "aşamalı destek",
+    "kademeli öğrenme yardımı"
+  ],
+  "differentiation": [
+    "farklılaştırma",
+    "öğrenciye göre uyarlama"
+  ],
+  "inclusion": [
+    "kapsayıcılık",
+    "tüm öğrencilere uygunluk"
+  ],
+  "motivation": [
+    "güdülenme",
+    "öğrenme isteği"
+  ],
+  "feedback form": [
+    "geri bildirim formu",
+    "dönüt formu"
+  ],
+  "peer review": [
+    "akran değerlendirmesi",
+    "öğrenciler arası inceleme"
+  ],
+  "self assessment": [
+    "öz değerlendirme",
+    "kendi öğrenmesini ölçme"
+  ],
+  "portfolio": [
+    "çalışma dosyası",
+    "ürün birikimi"
+  ],
+  "competency": [
+    "yeterlik",
+    "beceri düzeyi"
+  ],
+  "skill": [
+    "beceri",
+    "yapabilme gücü"
+  ],
+  "mastery": [
+    "ustalık",
+    "tam öğrenme düzeyi"
+  ],
+  "remediation": [
+    "eksik tamamlama",
+    "giderici destek"
+  ],
+  "practice": [
+    "alıştırma",
+    "uygulama yapma"
+  ],
+  "drill": [
+    "tekrar alıştırması",
+    "yoğun pratik"
+  ],
+  "hands-on": [
+    "uygulamalı",
+    "elle yaparak öğrenme"
+  ],
+  "blended learning": [
+    "harmanlanmış öğrenme",
+    "karma öğrenme"
+  ],
+  "remote learning": [
+    "uzaktan öğrenme",
+    "çevrim dışı olmayan öğretim"
+  ],
+  "synchronous": [
+    "eş zamanlı",
+    "aynı anda yapılan"
+  ],
+  "asynchronous": [
+    "eş zamansız",
+    "farklı zamanda yapılan"
+  ],
+  "lms": [
+    "öğrenme yönetim sistemi",
+    "ders yönetim platformu"
+  ],
+  "gradebook": [
+    "not çizelgesi",
+    "puan defteri"
+  ],
+  "attendance": [
+    "devam durumu",
+    "katılım kaydı"
+  ],
+  "badge": [
+    "rozet",
+    "başarı işareti"
+  ],
+  "gamification": [
+    "oyunlaştırma",
+    "oyun unsurlarıyla destekleme"
+  ],
+  "learning path": [
+    "öğrenme yolu",
+    "adım adım ilerleme planı"
+  ],
+  "prerequisite": [
+    "ön koşul",
+    "önceden bilinmesi gereken"
+  ],
+  "capstone": [
+    "bitirme çalışması",
+    "son uygulama projesi"
+  ],
+  "mentoring": [
+    "rehberlik etme",
+    "danışmanlık süreci"
+  ],
+  "hardware": [
+    "donanım",
+    "fiziksel bileşenler"
+  ],
+  "software": [
+    "yazılım",
+    "programlar bütünü"
+  ],
+  "firmware": [
+    "gömülü yazılım",
+    "aygıt iç yazılımı"
+  ],
+  "sensor": [
+    "algılayıcı",
+    "duyarga"
+  ],
+  "actuator": [
+    "eyleyici",
+    "hareket ettirici bileşen"
+  ],
+  "controller": [
+    "denetleyici",
+    "kontrol birimi"
+  ],
+  "microcontroller": [
+    "mikrodenetleyici",
+    "küçük denetim çipi"
+  ],
+  "single-board computer": [
+    "tek kart bilgisayar",
+    "tek kartlı sistem"
+  ],
+  "raspberry pi": [
+    "tek kart bilgisayar",
+    "küçük geliştirme bilgisayarı"
+  ],
+  "arduino": [
+    "mikrodenetleyici geliştirme kartı",
+    "geliştirme kartı"
+  ],
+  "gpio": [
+    "genel amaçlı giriş çıkış",
+    "sayısal uçlar"
+  ],
+  "pwm": [
+    "darbelik genişlik ayarı",
+    "görev döngüsü denetimi"
+  ],
+  "analog": [
+    "benzeşik",
+    "sürekli değerli"
+  ],
+  "digital": [
+    "sayısal",
+    "ikili değerli"
+  ],
+  "voltage": [
+    "gerilim",
+    "voltaj"
+  ],
+  "current": [
+    "akım",
+    "elektrik akışı"
+  ],
+  "resistance": [
+    "direnç",
+    "akımı zorlayan değer"
+  ],
+  "power supply": [
+    "güç kaynağı",
+    "enerji beslemesi"
+  ],
+  "battery": [
+    "pil",
+    "batarya"
+  ],
+  "charger": [
+    "şarj aygıtı",
+    "doldurma birimi"
+  ],
+  "usb": [
+    "evrensel seri veri yolu",
+    "usb bağlantısı"
+  ],
+  "bluetooth": [
+    "yakın alan kablosuz bağlantı",
+    "bluetooth"
+  ],
+  "wi-fi": [
+    "kablosuz ağ",
+    "wi-fi bağlantısı"
+  ],
+  "hotspot": [
+    "erişim noktası",
+    "taşınabilir ağ paylaşımı"
+  ],
+  "pairing": [
+    "eşleştirme",
+    "kablosuz bağlantı kurma"
+  ],
+  "latency mode": [
+    "gecikme kipi",
+    "yanıt öncelikli çalışma modu"
+  ],
+  "frame rate": [
+    "kare hızı",
+    "saniyedeki görüntü sayısı"
+  ],
+  "refresh rate": [
+    "yenileme hızı",
+    "ekran tazeleme sayısı"
+  ],
+  "touchscreen": [
+    "dokunmatik ekran",
+    "dokunarak kullanılan görüntü alanı"
+  ],
+  "display": [
+    "ekran",
+    "görüntü birimi"
+  ],
+  "lcd": [
+    "sıvı kristal ekran",
+    "lcd ekran"
+  ],
+  "oled": [
+    "organik ışık yayan ekran",
+    "oled ekran"
+  ],
+  "camera": [
+    "kamera",
+    "görüntü yakalayıcı"
+  ],
+  "webcam": [
+    "ağ kamerası",
+    "bilgisayar kamerası"
+  ],
+  "microphone": [
+    "mikrofon",
+    "ses algılayıcı"
+  ],
+  "speaker": [
+    "hoparlör",
+    "ses çıkış birimi"
+  ],
+  "joystick": [
+    "oyun kolu",
+    "yön denetim çubuğu"
+  ],
+  "gamepad": [
+    "oyun kumandası",
+    "elden kullanılan kontrol aygıtı"
+  ],
+  "motor driver": [
+    "motor sürücüsü",
+    "motor denetim kartı"
+  ],
+  "relay": [
+    "röle",
+    "elektriksel anahtarlama bileşeni"
+  ],
+  "breadboard": [
+    "deney tahtası",
+    "lehimsiz devre kurma alanı"
+  ],
+  "soldering": [
+    "lehime",
+    "metal birleştirerek bağlama"
+  ],
+  "schematic": [
+    "devre şeması",
+    "bağlantı çizimi"
+  ],
+  "pcb": [
+    "baskı devre kartı",
+    "devre kartı"
+  ],
+  "prototype board": [
+    "deneme kartı",
+    "ön örnek devre kartı"
+  ],
+  "enclosure": [
+    "kutu",
+    "koruyucu gövde"
+  ],
+  "3d print": [
+    "üç boyutlu baskı",
+    "katmanlı üretim çıktısı"
+  ],
+  "calibration": [
+    "kalibrasyon",
+    "ayar doğrulaması"
+  ],
+  "offset": [
+    "sapma payı",
+    "başlangıç kayması"
+  ],
+  "imu": [
+    "eylemsizlik ölçüm birimi",
+    "hareket algılayıcı küme"
+  ],
+  "gyroscope": [
+    "jiroskop",
+    "dönüş algılayıcı"
+  ],
+  "accelerometer": [
+    "ivmeölçer",
+    "ivme algılayıcı"
+  ],
+  "compass": [
+    "pusula",
+    "yön algılayıcı"
+  ],
+  "lidar": [
+    "ışıkla uzaklık algılama",
+    "lazer tarama sistemi"
+  ],
+  "radar": [
+    "radar",
+    "yansıyan dalga ile algılama"
+  ],
+  "sonar": [
+    "ses dalgası ile algılama",
+    "sonar"
+  ],
+  "absolute encoder": [
+    "mutlak konumlayıcı",
+    "tam konum kodlayıcı"
+  ],
+  "servo": [
+    "konum kontrollü motor",
+    "servo motor"
+  ],
+  "stepper": [
+    "adım motoru",
+    "adımlı motor"
+  ],
+  "dc motor": [
+    "doğru akım motoru",
+    "dc motor"
+  ],
+  "app": [
+    "uygulama",
+    "uygulama yazılımı"
+  ],
+  "mobile app": [
+    "mobil uygulama",
+    "telefon uygulaması"
+  ],
+  "desktop app": [
+    "masaüstü uygulaması",
+    "bilgisayar uygulaması"
+  ],
+  "install": [
+    "kurmak",
+    "yükleyip hazır hâle getirmek"
+  ],
+  "uninstall": [
+    "kaldırmak",
+    "kurulu uygulamayı silmek"
+  ],
+  "update available": [
+    "güncelleme var",
+    "yenileme hazır"
+  ],
+  "push notification": [
+    "anlık bildirim",
+    "uygulama bildirimi"
+  ],
+  "permission": [
+    "izin",
+    "erişim onayı"
+  ],
+  "location permission": [
+    "konum izni",
+    "yer bilgisi erişim onayı"
+  ],
+  "camera permission": [
+    "kamera izni",
+    "görüntü erişim onayı"
+  ],
+  "storage permission": [
+    "depolama izni",
+    "dosya erişim onayı"
+  ],
+  "settings": [
+    "ayarlar",
+    "yapılandırma seçenekleri"
+  ],
+  "preferences": [
+    "tercihler",
+    "kullanıcı seçimleri"
+  ],
+  "account": [
+    "hesap",
+    "kullanıcı hesabı"
+  ],
+  "sign up": [
+    "kayıt ol",
+    "hesap oluştur"
+  ],
+  "sign in": [
+    "oturum aç",
+    "giriş yap"
+  ],
+  "log out": [
+    "çıkış yap",
+    "oturumu kapat"
+  ],
+  "forgot password": [
+    "parolamı unuttum",
+    "şifre sıfırlama isteği"
+  ],
+  "verify email": [
+    "e-postayı doğrula",
+    "posta adresini onayla"
+  ],
+  "backup sync": [
+    "yedek eşitleme",
+    "veriyi yedekle ve aynıla"
+  ],
+  "cloud backup": [
+    "bulut yedeği",
+    "çevrim içi yedek"
+  ],
+  "offline mode": [
+    "çevrim dışı kip",
+    "internetsiz kullanım modu"
+  ],
+  "airplane mode": [
+    "uçak kipi",
+    "bağlantıları kapatma modu"
+  ],
+  "battery saver": [
+    "pil tasarrufu",
+    "enerji koruma kipi"
+  ],
+  "dark theme": [
+    "koyu tema",
+    "karanlık görünüm düzeni"
+  ],
+  "home screen": [
+    "ana ekran",
+    "giriş ekranı"
+  ],
+  "lock screen": [
+    "kilit ekranı",
+    "açılış koruma ekranı"
+  ],
+  "widget": [
+    "küçük araç",
+    "ana ekran bileşeni"
+  ],
+  "shortcut": [
+    "kısayol",
+    "hızlı erişim yolu"
+  ],
+  "gesture": [
+    "dokunma hareketi",
+    "el kaydırma komutu"
+  ],
+  "swipe": [
+    "kaydırma",
+    "parmak hareketiyle geçiş"
+  ],
+  "tap": [
+    "dokunma",
+    "tek temas komutu"
+  ],
+  "long press": [
+    "uzun basma",
+    "basılı tutma"
+  ],
+  "pinch": [
+    "iki parmakla yakınlaştırma",
+    "sıkıştırarak büyütme küçültme"
+  ],
+  "screenshot": [
+    "ekran görüntüsü",
+    "ekran resmi"
+  ],
+  "screen recording": [
+    "ekran kaydı",
+    "ekran videosu"
+  ],
+  "share sheet": [
+    "paylaşım menüsü",
+    "gönderim seçenekleri ekranı"
+  ],
+  "app store": [
+    "uygulama mağazası",
+    "uygulama marketi"
+  ],
+  "update channel": [
+    "güncelleme kanalı",
+    "sürüm alma yolu"
+  ],
+  "beta tester": [
+    "ön sürüm deneyi kullanıcısı",
+    "beta denemeci"
+  ],
+  "crash report": [
+    "çökme raporu",
+    "kapanma hata kaydı"
+  ],
+  "user consent": [
+    "kullanıcı onayı",
+    "kullanıcı rızası"
+  ],
+  "document": [
+    "belge",
+    "doküman"
+  ],
+  "report": [
+    "rapor",
+    "sonuç yazısı"
+  ],
+  "memo": [
+    "iç yazışma",
+    "kısa bilgilendirme notu"
+  ],
+  "announcement": [
+    "duyuru",
+    "bildiri"
+  ],
+  "spreadsheet": [
+    "hesap tablosu",
+    "çizelge dosyası"
+  ],
+  "worksheet tab": [
+    "sayfa sekmesi",
+    "çalışma sayfası bölümü"
+  ],
+  "slide": [
+    "slayt",
+    "sunum sayfası"
+  ],
+  "presentation": [
+    "sunum",
+    "görsel anlatım dosyası"
+  ],
+  "speaker notes": [
+    "sunucu notları",
+    "anlatıcı açıklamaları"
+  ],
+  "handout": [
+    "dağıtım notu",
+    "katılımcı kopyası"
+  ],
+  "meeting": [
+    "toplantı",
+    "görüşme oturumu"
+  ],
+  "conference": [
+    "konferans",
+    "büyük katılımlı toplantı"
+  ],
+  "calendar": [
+    "takvim",
+    "günlük plan çizelgesi"
+  ],
+  "schedule": [
+    "zaman çizelgesi",
+    "program"
+  ],
+  "deadline reminder": [
+    "son tarih hatırlatması",
+    "bitiş uyarısı"
+  ],
+  "follow-up": [
+    "takip",
+    "ardıl geri dönüş"
+  ],
+  "action item": [
+    "eylem maddesi",
+    "yapılacak iş"
+  ],
+  "owner note": [
+    "sorumlu notu",
+    "iş sahibine açıklama"
+  ],
+  "status update": [
+    "durum güncellemesi",
+    "ilerleme bildirimi"
+  ],
+  "revision history": [
+    "düzeltme geçmişi",
+    "değişiklik kaydı"
+  ],
+  "approve": [
+    "onayla",
+    "uygun bul"
+  ],
+  "reject": [
+    "reddet",
+    "uygun görme"
+  ],
+  "comment thread": [
+    "yorum dizisi",
+    "açıklama konuşma zinciri"
+  ],
+  "trash": [
+    "çöp",
+    "silinmişler bölümü"
+  ],
+  "restore file": [
+    "dosyayı geri getir",
+    "silineni geri yükle"
+  ],
+  "file version": [
+    "dosya sürümü",
+    "belge versiyonu"
+  ],
+  "team space": [
+    "ekip alanı",
+    "ortak paylaşım yeri"
+  ],
+  "directory": [
+    "dizin",
+    "klasör yolu"
+  ],
+  "folder": [
+    "klasör",
+    "dosya bölmesi"
+  ],
+  "subfolder": [
+    "alt klasör",
+    "iç klasör"
+  ],
+  "rename": [
+    "yeniden adlandır",
+    "adını değiştir"
+  ],
+  "duplicate": [
+    "kopyala",
+    "aynı dosyadan oluştur"
+  ],
+  "import": [
+    "içe aktar",
+    "başka yerden al"
+  ],
+  "print layout": [
+    "baskı düzeni",
+    "yazdırma görünümü"
+  ],
+  "header": [
+    "üst bilgi",
+    "sayfa başı"
+  ],
+  "footer": [
+    "alt bilgi",
+    "sayfa sonu"
+  ],
+  "watermark": [
+    "filigran",
+    "arka plan işareti"
+  ],
+  "citation": [
+    "atıf",
+    "kaynak gösterimi"
+  ],
+  "bibliography": [
+    "kaynakça",
+    "başvurulan eserler listesi"
+  ],
+  "appendix": [
+    "ek bölüm",
+    "sonradan eklenen bölüm"
+  ],
+  "table of contents": [
+    "içindekiler",
+    "başlık listesi"
+  ],
+  "abstract": [
+    "özet",
+    "bilimsel kısa açıklama"
+  ],
+  "keywords": [
+    "anahtar kelimeler",
+    "öne çıkan kavramlar"
+  ],
+  "methodology": [
+    "yöntem bilimi",
+    "uygulanan yöntemler bütünü"
+  ],
+  "finding": [
+    "bulgu",
+    "elde edilen sonuç"
+  ],
+  "conclusion": [
+    "sonuç",
+    "çıkarım"
+  ],
+  "checkout": [
+    "ödeme adımı",
+    "satın alma tamamlama ekranı"
+  ],
+  "cart": [
+    "sepet",
+    "alışveriş sepeti"
+  ],
+  "wishlist": [
+    "istek listesi",
+    "beğenilen ürünler listesi"
+  ],
+  "inventory": [
+    "stok",
+    "eldeki ürün miktarı"
+  ],
+  "stock keeping unit": [
+    "stok kodu",
+    "ürün birim kodu"
+  ],
+  "sku": [
+    "stok kodu",
+    "ürün birim kodu"
+  ],
+  "barcode": [
+    "barkod",
+    "çizgili ürün kodu"
+  ],
+  "qr code": [
+    "karekod",
+    "hızlı yanıt kodu"
+  ],
+  "invoice": [
+    "fatura",
+    "ödeme belgesi"
+  ],
+  "receipt": [
+    "fiş",
+    "satın alma makbuzu"
+  ],
+  "refund": [
+    "iade",
+    "geri ödeme"
+  ],
+  "return policy": [
+    "iade politikası",
+    "geri gönderim koşulları"
+  ],
+  "shipping": [
+    "kargolama",
+    "gönderim"
+  ],
+  "tracking": [
+    "takip",
+    "gönderi izleme"
+  ],
+  "fulfillment": [
+    "sipariş karşılama",
+    "ürün hazırlama ve gönderme"
+  ],
+  "payment gateway": [
+    "ödeme geçidi",
+    "ödeme aracısı"
+  ],
+  "installment": [
+    "taksit",
+    "bölünmüş ödeme"
+  ],
+  "subscription renewal": [
+    "abonelik yenileme",
+    "üyelik uzatma"
+  ],
+  "invoice due date": [
+    "fatura son ödeme tarihi",
+    "ödeme bitiş günü"
+  ],
+  "revenue": [
+    "gelir",
+    "kazanılan para"
+  ],
+  "profit": [
+    "kâr",
+    "kazanç fazlası"
+  ],
+  "expense": [
+    "gider",
+    "harcama"
+  ],
+  "budget": [
+    "bütçe",
+    "ayrılan harcama sınırı"
+  ],
+  "cash flow": [
+    "nakit akışı",
+    "para giriş çıkışı"
+  ],
+  "burn rate": [
+    "nakit tüketim hızı",
+    "harcama temposu"
+  ],
+  "invoice number": [
+    "fatura numarası",
+    "ödeme belge kodu"
+  ],
+  "tax": [
+    "vergi",
+    "yasal ödeme kesintisi"
+  ],
+  "vat": [
+    "katma değer vergisi",
+    "kdv"
+  ],
+  "gross": [
+    "brüt",
+    "kesinti öncesi"
+  ],
+  "net": [
+    "net",
+    "kesinti sonrası"
+  ],
+  "license": [
+    "lisans",
+    "kullanım izni"
+  ],
+  "open source": [
+    "açık kaynak",
+    "kaynağı açık yazılım"
+  ],
+  "copyright": [
+    "telif hakkı",
+    "eser hakkı"
+  ],
+  "trademark": [
+    "ticari marka",
+    "marka hakkı"
+  ],
+  "patent": [
+    "patent",
+    "buluş koruma hakkı"
+  ],
+  "disclaimer": [
+    "sorumluluk reddi",
+    "uyarı metni"
+  ],
+  "nda": [
+    "gizlilik sözleşmesi",
+    "bilgiyi paylaşmama sözleşmesi"
+  ],
+  "contract": [
+    "sözleşme",
+    "bağlayıcı anlaşma"
+  ],
+  "clause": [
+    "madde",
+    "sözleşme bölümü"
+  ],
+  "jurisdiction": [
+    "yargı alanı",
+    "yetkili hukuk bölgesi"
+  ],
+  "liability": [
+    "sorumluluk",
+    "hukuki yükümlülük"
+  ],
+  "termination": [
+    "sona erdirme",
+    "fesih"
+  ],
+  "renewal": [
+    "yenileme",
+    "sözleşme uzatma"
+  ],
+  "notice period": [
+    "bildirim süresi",
+    "önceden haber verme aralığı"
+  ],
+  "browser": [
+    "tarayıcı",
+    "ağ gezgini"
+  ],
+  "tab": [
+    "sekme",
+    "açık sayfa bölümü"
+  ],
+  "homepage": [
+    "ana sayfa",
+    "giriş sayfası"
+  ],
+  "search engine": [
+    "arama motoru",
+    "web arama sistemi"
+  ],
+  "query suggestion": [
+    "arama önerisi",
+    "sorgu tavsiyesi"
+  ],
+  "autocomplete": [
+    "otomatik tamamlama",
+    "kendiliğinden tamamlama"
+  ],
+  "download speed": [
+    "indirme hızı",
+    "veri alma hızı"
+  ],
+  "upload speed": [
+    "yükleme hızı",
+    "veri gönderme hızı"
+  ],
+  "bandwidth test": [
+    "bant genişliği testi",
+    "bağlantı kapasite ölçümü"
+  ],
+  "offline cache": [
+    "çevrim dışı önbellek",
+    "internetsiz saklanan veri"
+  ],
+  "browser history": [
+    "tarama geçmişi",
+    "ziyaret edilen sayfalar listesi"
+  ],
+  "incognito": [
+    "gizli pencere",
+    "iz bırakmayan tarama"
+  ],
+  "extension": [
+    "eklenti",
+    "tarayıcı ek programı"
+  ],
+  "plugin": [
+    "eklenti",
+    "yardımcı bileşen"
+  ],
+  "add-on": [
+    "ek bileşen",
+    "sonradan eklenen işlev"
+  ],
+  "shortcut key": [
+    "kısayol tuşu",
+    "hızlı işlem tuşu"
+  ],
+  "drag and drop": [
+    "sürükle bırak",
+    "taşıyıp bırakma"
+  ],
+  "clipboard": [
+    "pano",
+    "kopyala yapıştır alanı"
+  ],
+  "paste": [
+    "yapıştır",
+    "panodakini ekle"
+  ],
+  "copy": [
+    "kopyala",
+    "aynısından al"
+  ],
+  "hotfix": [
+    "acil düzeltme"
+  ],
+  "refactor": [
+    "yeniden düzenlemek",
+    "iyileştirmek (kod)"
+  ],
+  "debug": [
+    "hata ayıklamak"
+  ],
+  "log": [
+    "kayıt",
+    "günlük"
+  ],
+  "simülasyon": [
+    "benzetim"
+  ],
+  "senaryo": [
+    "durum örneği",
+    "kurgulama"
+  ],
+  "metodoloji": [
+    "yöntem bilimi",
+    "yöntemler bütünü"
+  ],
+  "metod": [
+    "yöntem"
+  ],
+  "benchmark": [
+    "karşılaştırma ölçümü",
+    "kıyas ölçümü"
+  ],
+  "prototype": [
+    "ön örnek",
+    "taslak örnek"
+  ],
+  "prototip": [
+    "ön örnek",
+    "taslak örnek"
+  ],
+  "Optimize": [
+    "eniyilemek",
+    "iyileştirmek",
+    "en uygun hâle getirmek"
+  ]
+}
