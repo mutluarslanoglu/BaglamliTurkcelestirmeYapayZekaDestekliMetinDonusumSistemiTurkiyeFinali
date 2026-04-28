@@ -4240,5 +4240,853 @@
     "eniyilemek",
     "iyileştirmek",
     "en uygun hâle getirmek"
+  ],
+  "ok": [
+    "tamam",
+    "olur",
+    "peki"
+  ],
+  "hi": [
+    "merhaba",
+    "selam"
+  ],
+  "hello": [
+    "merhaba",
+    "selam"
+  ],
+  "bye": [
+    "hoşça kal",
+    "güle güle"
+  ],
+  "good morning": [
+    "günaydın"
+  ],
+  "good night": [
+    "iyi geceler"
+  ],
+  "thanks": [
+    "teşekkürler",
+    "sağ ol"
+  ],
+  "thank you": [
+    "teşekkür ederim",
+    "sağ ol"
+  ],
+  "sorry": [
+    "özür dilerim",
+    "kusura bakma"
+  ],
+  "please": [
+    "lütfen"
+  ],
+  "yes": [
+    "evet"
+  ],
+  "no": [
+    "hayır"
+  ],
+  "maybe": [
+    "belki"
+  ],
+  "why": [
+    "neden"
+  ],
+  "because": [
+    "çünkü"
+  ],
+  "what": [
+    "ne"
+  ],
+  "where": [
+    "nerede"
+  ],
+  "when": [
+    "ne zaman"
+  ],
+  "who": [
+    "kim"
+  ],
+  "how": [
+    "nasıl"
+  ],
+  "wait": [
+    "bekle",
+    "dur"
+  ],
+  "come": [
+    "gel"
+  ],
+  "go": [
+    "git"
+  ],
+  "look": [
+    "bak"
+  ],
+  "listen": [
+    "dinle"
+  ],
+  "watch": [
+    "izle"
+  ],
+  "open": [
+    "aç"
+  ],
+  "close": [
+    "kapat"
+  ],
+  "start": [
+    "başlat",
+    "başla"
+  ],
+  "stop": [
+    "dur",
+    "durdur"
+  ],
+  "finish": [
+    "bitir",
+    "tamamla"
+  ],
+  "buy": [
+    "satın almak",
+    "almak"
+  ],
+  "sell": [
+    "satmak"
+  ],
+  "pay": [
+    "ödemek"
+  ],
+  "money": [
+    "para"
+  ],
+  "cheap": [
+    "ucuz"
+  ],
+  "expensive": [
+    "pahalı"
+  ],
+  "friend": [
+    "arkadaş"
+  ],
+  "family": [
+    "aile"
+  ],
+  "home": [
+    "ev"
+  ],
+  "school": [
+    "okul"
+  ],
+  "teacher": [
+    "öğretmen"
+  ],
+  "student": [
+    "öğrenci"
+  ],
+  "food": [
+    "yemek"
+  ],
+  "water": [
+    "su"
+  ],
+  "drink": [
+    "içecek",
+    "içmek"
+  ],
+  "eat": [
+    "yemek yemek",
+    "yemek"
+  ],
+  "hungry": [
+    "aç"
+  ],
+  "full": [
+    "tok",
+    "dolu"
+  ],
+  "happy": [
+    "mutlu"
+  ],
+  "sad": [
+    "üzgün"
+  ],
+  "angry": [
+    "kızgın"
+  ],
+  "tired": [
+    "yorgun"
+  ],
+  "busy": [
+    "meşgul"
+  ],
+  "free": [
+    "boş",
+    "müsait"
+  ],
+  "fast": [
+    "hızlı"
+  ],
+  "slow": [
+    "yavaş"
+  ],
+  "big": [
+    "büyük"
+  ],
+  "small": [
+    "küçük"
+  ],
+  "new": [
+    "yeni"
+  ],
+  "old": [
+    "eski"
+  ],
+  "good": [
+    "iyi"
+  ],
+  "bad": [
+    "kötü"
+  ],
+  "right": [
+    "doğru",
+    "sağ"
+  ],
+  "left": [
+    "sol"
+  ],
+  "today": [
+    "bugün"
+  ],
+  "tomorrow": [
+    "yarın"
+  ],
+  "yesterday": [
+    "dün"
+  ],
+  "always": [
+    "her zaman"
+  ],
+  "never": [
+    "asla"
+  ],
+  "sometimes": [
+    "bazen"
+  ],
+  "very": [
+    "çok"
+  ],
+  "really": [
+    "gerçekten"
+  ],
+  "again": [
+    "tekrar"
+  ],
+  "already": [
+    "zaten"
+  ],
+  "still": [
+    "hala"
+  ],
+  "meeting": [
+    "toplantı",
+    "görüşme",
+    "buluşma"
+  ],
+  "online meeting": [
+    "çevrim içi toplantı",
+    "uzaktan görüşme",
+    "internet üzerinden toplantı"
+  ],
+  "deadline": [
+    "son tarih",
+    "teslim süresi",
+    "bitirme zamanı"
+  ],
+  "presentation": [
+    "sunum",
+    "tanıtım konuşması",
+    "anlatım"
+  ],
+  "project": [
+    "proje",
+    "tasarı",
+    "çalışma"
+  ],
+  "software": [
+    "yazılım",
+    "program",
+    "sayısal sistem"
+  ],
+  "hardware": [
+    "donanım",
+    "fiziksel bileşen",
+    "aygıt altyapısı"
+  ],
+  "artificial intelligence": [
+    "yapay zekâ",
+    "akıllı sistem",
+    "öğrenen sistem"
+  ],
+  "machine learning": [
+    "makine öğrenmesi",
+    "öğrenen algoritma",
+    "veriden öğrenme"
+  ],
+  "deep learning": [
+    "derin öğrenme",
+    "çok katmanlı öğrenme",
+    "yapay sinir ağı temelli öğrenme"
+  ],
+  "natural language processing": [
+    "doğal dil işleme",
+    "dil işleme",
+    "metin çözümleme"
+  ],
+  "nlp": [
+    "doğal dil işleme",
+    "dil işleme",
+    "metin işleme"
+  ],
+  "model": [
+    "model",
+    "örnek yapı",
+    "öğrenilmiş yapı"
+  ],
+  "ai model": [
+    "yapay zekâ modeli",
+    "öğrenen model",
+    "akıllı karar modeli"
+  ],
+  "context analysis": [
+    "bağlam analizi",
+    "anlam çevresi çözümlemesi",
+    "cümleye göre anlam incelemesi"
+  ],
+  "contextual translation": [
+    "bağlamsal çeviri",
+    "cümleye göre çeviri",
+    "anlama dayalı aktarım"
+  ],
+  "word detection": [
+    "kelime tespiti",
+    "sözcük bulma",
+    "kelime algılama"
+  ],
+  "foreign word": [
+    "yabancı kelime",
+    "yabancı sözcük",
+    "dilimize dışarıdan geçmiş söz"
+  ],
+  "suggestion": [
+    "öneri",
+    "tavsiye",
+    "seçenek"
+  ],
+  "alternative": [
+    "alternatif",
+    "seçenek",
+    "başka karşılık"
+  ],
+  "manual selection": [
+    "manuel seçim",
+    "elle seçim",
+    "kullanıcı seçimi"
+  ],
+  "automatic conversion": [
+    "otomatik dönüşüm",
+    "kendiliğinden dönüştürme",
+    "sistemli çevirme"
+  ],
+  "text transformation": [
+    "metin dönüşümü",
+    "yazı dönüştürme",
+    "metni yeniden düzenleme"
+  ],
+  "dictionary": [
+    "sözlük",
+    "kelime hazinesi",
+    "karşılık listesi"
+  ],
+  "json dictionary": [
+    "json sözlüğü",
+    "yapılandırılmış sözlük",
+    "veri tabanlı kelime listesi"
+  ],
+  "accuracy": [
+    "doğruluk",
+    "başarı oranı",
+    "isabetlilik"
+  ],
+  "success rate": [
+    "başarı oranı",
+    "doğruluk oranı",
+    "isabet düzeyi"
+  ],
+  "test": [
+    "sınama",
+    "deneme",
+    "ölçme"
+  ],
+  "result": [
+    "sonuç",
+    "çıktı",
+    "elde edilen veri"
+  ],
+  "output": [
+    "çıktı",
+    "sonuç",
+    "üretilen veri"
+  ],
+  "input": [
+    "girdi",
+    "girilen veri",
+    "başlangıç verisi"
+  ],
+  "user": [
+    "kullanıcı",
+    "yararlanıcı",
+    "sistemi kullanan kişi"
+  ],
+  "system": [
+    "sistem",
+    "düzenek",
+    "işleyiş yapısı"
+  ],
+  "application": [
+    "uygulama",
+    "program",
+    "kullanım alanı"
+  ],
+  "website": [
+    "internet sitesi",
+    "web sitesi",
+    "ağ sayfası"
+  ],
+  "interface": [
+    "arayüz",
+    "kullanım ekranı",
+    "etkileşim yüzeyi"
+  ],
+  "button": [
+    "buton",
+    "düğme",
+    "seçim tuşu"
+  ],
+  "screen": [
+    "ekran",
+    "görüntü alanı",
+    "sayfa"
+  ],
+  "analysis": [
+    "analiz",
+    "çözümleme",
+    "inceleme"
+  ],
+  "semantic": [
+    "anlamsal",
+    "mana ile ilgili",
+    "anlama dayalı"
+  ],
+  "similarity": [
+    "benzerlik",
+    "yakınlık",
+    "anlamsal yakınlık"
+  ],
+  "cosine similarity": [
+    "kosinüs benzerliği",
+    "vektörel benzerlik",
+    "açısal yakınlık ölçümü"
+  ],
+  "sentence": [
+    "cümle",
+    "tümce",
+    "anlam birimi"
+  ],
+  "sentence embedding": [
+    "cümle vektörü",
+    "cümle gösterimi",
+    "cümleye ait sayısal temsil"
+  ],
+  "decision mechanism": [
+    "karar mekanizması",
+    "seçim sistemi",
+    "karar verme yapısı"
+  ],
+  "score": [
+    "puan",
+    "değer",
+    "uygunluk puanı"
+  ],
+  "data": [
+    "veri",
+    "bilgi",
+    "işlenen bilgi"
+  ],
+  "data set": [
+    "veri kümesi",
+    "veri takımı",
+    "örnek veri grubu"
+  ],
+  "training": [
+    "eğitim",
+    "öğretim süreci",
+    "model eğitimi"
+  ],
+  "testing": [
+    "sınama",
+    "test etme",
+    "deneme süreci"
+  ],
+  "validation": [
+    "doğrulama",
+    "geçerleme",
+    "uygunluk sınaması"
+  ],
+  "error": [
+    "hata",
+    "yanlışlık",
+    "sistem hatası"
+  ],
+  "improvement": [
+    "iyileştirme",
+    "geliştirme",
+    "daha iyi hâle getirme"
+  ],
+  "language": [
+    "dil",
+    "anlatım sistemi",
+    "iletişim aracı"
+  ],
+  "literature": [
+    "edebiyat",
+    "yazın",
+    "yazılı anlatım alanı"
+  ],
+  "grammar": [
+    "dil bilgisi",
+    "gramer",
+    "dil kuralları"
+  ],
+  "meaning": [
+    "anlam",
+    "mana",
+    "ifade değeri"
+  ],
+  "expression": [
+    "ifade",
+    "anlatım",
+    "söyleyiş"
+  ],
+  "translation": [
+    "çeviri",
+    "dil aktarımı",
+    "anlam aktarımı"
+  ],
+  "call": [
+    "aramak",
+    "telefon etmek"
+  ],
+  "message": [
+    "mesaj",
+    "ileti"
+  ],
+  "text": [
+    "mesaj atmak",
+    "yazmak"
+  ],
+  "phone": [
+    "telefon"
+  ],
+  "charger": [
+    "şarj aleti"
+  ],
+  "battery": [
+    "pil",
+    "batarya"
+  ],
+  "internet": [
+    "internet"
+  ],
+  "wifi": [
+    "kablosuz ağ",
+    "wi-fi"
+  ],
+  "password": [
+    "şifre"
+  ],
+  "username": [
+    "kullanıcı adı"
+  ],
+  "login": [
+    "giriş yapmak",
+    "oturum açmak"
+  ],
+  "logout": [
+    "çıkış yapmak",
+    "oturumu kapatmak"
+  ],
+  "search": [
+    "aramak",
+    "araştırmak"
+  ],
+  "find": [
+    "bulmak"
+  ],
+  "send": [
+    "göndermek"
+  ],
+  "receive": [
+    "almak",
+    "teslim almak"
+  ],
+  "check": [
+    "kontrol etmek",
+    "bakmak"
+  ],
+  "try": [
+    "denemek"
+  ],
+  "use": [
+    "kullanmak"
+  ],
+  "help": [
+    "yardım",
+    "yardım etmek"
+  ],
+  "problem": [
+    "sorun",
+    "problem"
+  ],
+  "solution": [
+    "çözüm"
+  ],
+  "idea": [
+    "fikir"
+  ],
+  "plan": [
+    "plan"
+  ],
+  "job": [
+    "iş",
+    "meslek"
+  ],
+  "work": [
+    "çalışmak",
+    "iş"
+  ],
+  "office": [
+    "ofis"
+  ],
+  "meeting room": [
+    "toplantı odası"
+  ],
+  "boss": [
+    "patron",
+    "yönetici"
+  ],
+  "team": [
+    "takım",
+    "ekip"
+  ],
+  "group": [
+    "grup"
+  ],
+  "people": [
+    "insanlar"
+  ],
+  "person": [
+    "kişi"
+  ],
+  "name": [
+    "isim",
+    "ad"
+  ],
+  "age": [
+    "yaş"
+  ],
+  "city": [
+    "şehir"
+  ],
+  "country": [
+    "ülke"
+  ],
+  "address": [
+    "adres"
+  ],
+  "place": [
+    "yer"
+  ],
+  "location": [
+    "konum",
+    "yer"
+  ],
+  "near": [
+    "yakın"
+  ],
+  "far": [
+    "uzak"
+  ],
+  "inside": [
+    "içinde"
+  ],
+  "outside": [
+    "dışında"
+  ],
+  "before": [
+    "önce"
+  ],
+  "after": [
+    "sonra"
+  ],
+  "early": [
+    "erken"
+  ],
+  "late": [
+    "geç"
+  ],
+  "minute": [
+    "dakika"
+  ],
+  "hour": [
+    "saat"
+  ],
+  "day": [
+    "gün"
+  ],
+  "week": [
+    "hafta"
+  ],
+  "month": [
+    "ay"
+  ],
+  "year": [
+    "yıl"
+  ],
+  "now": [
+    "şimdi"
+  ],
+  "later": [
+    "sonra",
+    "daha sonra"
+  ],
+  "soon": [
+    "yakında"
+  ],
+  "again": [
+    "tekrar"
+  ],
+  "ready": [
+    "hazır"
+  ],
+  "wait a minute": [
+    "bir dakika bekle"
+  ],
+  "come here": [
+    "buraya gel"
+  ],
+  "go there": [
+    "oraya git"
+  ],
+  "sit down": [
+    "otur"
+  ],
+  "stand up": [
+    "ayağa kalk"
+  ],
+  "be careful": [
+    "dikkatli ol"
+  ],
+  "no problem": [
+    "sorun değil"
+  ],
+  "of course": [
+    "tabii ki"
+  ],
+  "i think": [
+    "bence",
+    "ben düşünüyorum ki"
+  ],
+  "i know": [
+    "biliyorum"
+  ],
+  "i don't know": [
+    "bilmiyorum"
+  ],
+  "i understand": [
+    "anlıyorum"
+  ],
+  "i don't understand": [
+    "anlamıyorum"
+  ],
+  "what happened": [
+    "ne oldu"
+  ],
+  "what are you doing": [
+    "ne yapıyorsun"
+  ],
+  "where are you": [
+    "neredesin"
+  ],
+  "how are you": [
+    "nasılsın"
+  ],
+  "i am fine": [
+    "iyiyim"
+  ],
+  "see you": [
+    "görüşürüz"
+  ],
+  "take care": [
+    "kendine iyi bak"
+  ],
+  "good luck": [
+    "bol şans"
+  ],
+  "congratulations": [
+    "tebrikler"
+  ],
+  "welcome": [
+    "hoş geldin",
+    "rica ederim"
+  ],
+  "come on": [
+    "hadi",
+    "çabuk ol"
+  ],
+  "let's go": [
+    "hadi gidelim"
+  ],
+  "stop it": [
+    "bırak şunu",
+    "yapma"
+  ],
+  "just a second": [
+    "bir saniye"
+  ],
+  "no way": [
+    "olmaz",
+    "imkansız"
+  ],
+  "really": [
+    "gerçekten"
+  ],
+  "exactly": [
+    "aynen",
+    "tam olarak"
+  ],
+  "maybe later": [
+    "belki sonra"
+  ],
+  "i agree": [
+    "katılıyorum"
+  ],
+  "i disagree": [
+    "katılmıyorum"
+  ],
+  "what do you mean": [
+    "ne demek istiyorsun"
+  ],
+  "it depends": [
+    "duruma bağlı"
   ]
 }
